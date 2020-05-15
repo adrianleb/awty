@@ -1,5 +1,6 @@
 const theme = {
-  space: [0, 5, 10, 20, 40, 80, 160, 320, 640],
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+
   sizes: {
     container: 900,
     photos: 46
