@@ -9,6 +9,7 @@ const theme = {
     heading: '"porter-sans", serif',
     monospace: 'Menlo, monospace',
   },
+  
   fontSizes: [12, 14, 16, 24, 32, 48, 64, 96, 128],
   fontWeights: {
     body: 400,
