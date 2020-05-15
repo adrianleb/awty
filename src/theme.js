@@ -7,7 +7,7 @@ const theme = {
   fonts: {
     body: '"Source Sans Pro", sans-serif',
     heading: '"porter-sans", serif',
-    monospace: 'Menlo, monospace',
+    heading2: '"Jost", sans-serif'
   },
   
   fontSizes: [12, 14, 16, 24, 32, 48, 64, 96, 128],
@@ -25,12 +25,12 @@ const theme = {
     round: '50px'
   },
   colors: {
-    text: '#000',
+    text: '#333333',
     background: '#fff',
     background2: '#ffe7e7',
     background3: '#cefff3',
     backgroundGradient: 'linear-gradient(137deg, #12c6d9 5%, #ffc6fe 46%, #00ff8d 100%)',
-    primary: '#000',
+    primary: '#333333',
     onPrimary: '#fff',
     accent: '#F30000',
     secondary: '#0f3b06',
@@ -121,7 +121,9 @@ const theme = {
   buttons: {
     primary: {
       background: 'primary',
-      fontSize: 2,
+      fontFamily: 'heading2',
+      letterSpacing: 1,
+      fontSize: 3,
       fontWeight: 'bold',
       textTransform: 'uppercase',
       borderRadius: '5px',
@@ -152,16 +154,17 @@ const theme = {
     },
     h2: {
       color: 'text',
-      fontFamily: 'heading',
-      lineHeight: 'heading',
-      fontWeight: 'heading',
+      fontFamily: 'heading2',
+      lineHeight: 'heading2',
+      fontWeight: 'heading2',
       fontSize: 4,
     },
     h3: {
       color: 'text',
-      fontFamily: 'heading',
-      lineHeight: 'heading',
-      fontWeight: 'heading',
+      fontFamily: 'heading2',
+      lineHeight: 'heading2',
+      fontWeight: 'heading2',
+      letterSpacing: 0.2,
       fontSize: 3,
     },
     h4: {

@@ -15,6 +15,11 @@ export default class App extends NextApp {
             href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&amp;display=swap"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&amp;display=swap"
+            rel="stylesheet"
+          />
+
         </Head>
         <Global
           styles={css`

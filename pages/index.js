@@ -155,11 +155,11 @@ export default () => {
           >
             Are We There Yet
           </Styled.h1>
-          <Styled.h2>
+          <Styled.h3>
             Micro festival showcasing lightning talks on the future of
             creativity
-          </Styled.h2>
-          <Styled.h2>may 31, june 1-2, 2020, time time time</Styled.h2>
+          </Styled.h3>
+          <Styled.h3>May 31, June 1-2, 2020</Styled.h3>
 
           <Grid
             gap={2}
