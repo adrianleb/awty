@@ -217,7 +217,7 @@ export default () => {
                 // px: 4,
               }}
             >
-              <Heading>Are we there yet?</Heading>
+              <Styled.h2>ARE WE THERE YET?</Styled.h2>
               <Text as="p">
                 It may seem like a fairly easy question. Yet some of the
                 simplest questions in life can lead us to think deeply about
