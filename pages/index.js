@@ -235,12 +235,6 @@ export default () => {
                 or even dangerous. New paths are being paved, and you are the
                 pavers.
               </Text>
-              <Text>
-                Membership application is now open. Click the button below to
-                join the movement and become a part of our borderless creative
-                community.
-              </Text>
-              <Button>Membership Application</Button>
 
               {/* <Intro /> */}
             </Grid>
