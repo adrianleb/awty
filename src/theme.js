@@ -1,3 +1,5 @@
+import { transparentize, invert } from '@theme-ui/color';
+
 const theme = {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   sizes: {
@@ -32,6 +34,7 @@ const theme = {
     backgroundGradient:
       'linear-gradient(137deg, #12c6d9 5%, #ffc6fe 46%, #00ff8d 100%)',
     primary: '#333333',
+    onBackground: '#333',
     onPrimary: '#fff',
     accent: '#F30000',
     secondary: '#0f3b06',
@@ -39,7 +42,11 @@ const theme = {
     modes: {
       dark: {
         text: '#fff',
+        primary: '#fff',
+        onBackground: '#fff',
+        onPrimary: '#000',
         background: '#000',
+        background2: '#001818',
       },
     },
   },
@@ -137,7 +144,7 @@ const theme = {
     styledsub3: {
       variant: 'text.sub3',
       color: 'background',
-      lineHeight: 1.7,
+      lineHeight: 1.65,
     },
     sub4: {
       variant: 'text.sub2',
@@ -162,6 +169,9 @@ const theme = {
     },
   },
   buttons: {
+    icon: {
+      stroke: 'onBackground',
+    },
     primary: {
       background: 'primary',
       fontFamily: 'heading2',

@@ -13,6 +13,8 @@
   "dependencies": {
     "@mdx-js/loader": "^1.5.8",
     "@next/mdx": "^9.3.4",
+    "@react-spring/parallax": "^9.0.0-rc.3",
+    "@theme-ui/color": "^0.3.1",
     "lodash.clamp": "^4.0.3",
     "moment": "^2.25.3",
     "moment-timezone": "^0.5.29",

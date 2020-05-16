@@ -1,22 +1,40 @@
 /** @jsx jsx */
 
-import { useState, createRef, useRef, useEffect } from 'react';
-import { jsx, Box } from 'theme-ui';
+import { useState, createRef, useRef, useEffect, useCallback } from 'react';
+import { jsx, Box, useThemeUI } from 'theme-ui';
 import { useSpring, a, config } from 'react-spring';
-import { useDrag } from 'react-use-gesture';
+import { useDrag, useScroll } from 'react-use-gesture';
 import Nav from '../components/Nav';
 import Header from '../components/Header';
-
+import { transparentize } from '@theme-ui/color';
 const width = 380;
 
 const AnimatedLayout = ({ children }) => {
+  const { theme } = useThemeUI();
   const [{ x }, set] = useSpring(() => ({ x: 0 }));
+  const [{ st, xy }, setEv] = useSpring(() => ({ st: 0, xy: [0, 0] }));
+
   const open = ({ canceled }) => {
     set({ x: width, config: canceled ? config.wobbly : config.stiff });
   };
   const close = (velocity = 0) => {
     set({ x: 0, config: { ...config.stiff, velocity } });
   };
+
+  const bindScroll = useScroll(
+    ({ xy: [, y] }) => {
+      setEv({ st: y });
+    },
+    { domTarget: typeof window === 'object' ? window : null }
+  );
+
+  useEffect(bindScroll, [bindScroll]);
+
+  const onMove = useCallback(
+    ({ clientX: x, clientY: y }) =>
+      setEv({ xy: [x - window.innerWidth / 2, y - window.innerHeight / 2] }),
+    []
+  );
 
   const bind = useDrag(
     ({ down, first, last, vxvy: [vx], movement: [mx], cancel, canceled }) => {
@@ -40,6 +58,20 @@ const AnimatedLayout = ({ children }) => {
 
   const display = x.to((px) => (px > 0 ? 'block' : 'none'));
 
+  console.log(
+    theme,
+    theme.colors.background,
+    transparentize(theme.colors.background, 1)()
+  );
+  const headerStyles = {
+    backgroundColor: st.to(
+      [0, 500],
+      [
+        transparentize(theme.colors.background, 1)(),
+        transparentize(theme.colors.background, 0.1)(),
+      ]
+    ),
+  };
   const bgStyle = {
     opacity: x.to([0, width], [0, 1], 'clamp'),
     touchAction: x.to((v) => (v > 0 ? 'none' : 'auto')),
@@ -48,7 +80,7 @@ const AnimatedLayout = ({ children }) => {
   };
 
   return (
-    <>
+    <div>
       <Box sx={{}}></Box>
       <a.div
         {...bind()}
@@ -92,17 +124,28 @@ const AnimatedLayout = ({ children }) => {
       <a.div
         sx={{
           position: 'fixed',
-          bg: 'rgba(255, 255, 255, 0.1)',
+          // bg: () => `rgba(255, 255, 255, 0.1)`,
           zIndex: 2,
           top: 0,
           left: 0,
           right: 0,
         }}
+        style={headerStyles}
       >
         <Header onNavOpen={open} />
+        {/* <a.div
+          sx={{
+            bg: 'red',
+            py: 4,
+            position: 'absolute',
+            top: 0,
+            width: '100%',
+            zIndex: -1,
+          }}
+        ></a.div> */}
       </a.div>
       {children}
-    </>
+    </div>
   );
 };
 

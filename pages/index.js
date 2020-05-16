@@ -1,5 +1,5 @@
 /** @jsx jsx */
-
+import { useRef } from 'react';
 import {
   jsx,
   Styled,
@@ -15,6 +15,7 @@ import {
   IconButton,
 } from 'theme-ui';
 import PageLabel from '../components/PageLabel';
+
 import AnimatedLayout from '../components/AnimatedLayout';
 import Footer from '../components/Footer';
 import Poly from '../components/Poly';
@@ -27,6 +28,7 @@ import dynamic from 'next/dynamic';
 const Bg = dynamic(() => import('../components/Bg'), { ssr: false });
 
 export default () => {
+  const ref = useRef(null);
   return (
     <AnimatedLayout>
       <Box

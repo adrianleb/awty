@@ -13,7 +13,7 @@ const PageLabel = ({ position, children, offset = '50' }) => {
       <Text variant="pageLabel">{children}</Text>
       <Box
         sx={{
-          bg: 'black',
+          bg: 'onBackground',
           height: '4px',
           width: '100px',
           mt: 1,

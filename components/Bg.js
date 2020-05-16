@@ -16,13 +16,11 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 extend({ LineMaterial, WireframeGeometry2, Wireframe });
 
 function Test({ colors, url, objKey }) {
-  console.log(colors, 'lala');
   //const { size } = useThree()
   //const resolution = useMemo(() => [size.width, size.height], [])
   const resolution = useMemo(() => [1024, 1024], []);
   const { nodes } = useLoader(GLTFLoader, url);
   const group = useRef();
-  console.log(nodes, 'la', objKey, nodes[objKey]);
   const lines = useUpdate(
     (geo) =>
       geo.fromEdgesGeometry(new THREE.EdgesGeometry(nodes[objKey].geometry)),
@@ -51,7 +49,6 @@ function Test({ colors, url, objKey }) {
 }
 const Bg = ({ url, objKey }) => {
   const { theme } = useThemeUI();
-  console.log(theme.colors, url, objKey);
   return (
     <Canvas
       sRGB

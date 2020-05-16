@@ -48,7 +48,7 @@ const Header = ({ onNavOpen }) => {
           sx={{
             bg: colorMode === 'light' ? 'primary' : 'text',
             borderRadius: '50px',
-            stroke: colorMode === 'light' ? 'background' : 'primary',
+            stroke: 'background',
           }}
           onClick={() => setColorMode(colorMode === 'light' ? 'dark' : 'light')}
         >
