@@ -7,7 +7,7 @@ import { useDrag, useScroll } from 'react-use-gesture';
 import Nav from '../components/Nav';
 import Header from '../components/Header';
 import { transparentize } from '@theme-ui/color';
-const width = 380;
+const width = 300;
 
 const AnimatedLayout = ({ children }) => {
   const { theme } = useThemeUI();
