@@ -1,6 +1,5 @@
 /** @jsx jsx */
 
-import { useState, createRef, useRef, useEffect } from 'react';
 import {
   jsx,
   Styled,
@@ -60,7 +59,7 @@ export default () => {
             <Heading variant="sub4">
               Micro festival showcasing lightning talks on the future of
               creativity
-            </Heading >
+            </Heading>
             <Heading variant="sub4">May 31, June 1-2, 2020</Heading>
 
             <Grid
@@ -91,7 +90,7 @@ export default () => {
             Who are we?
           </PageLabel>
 
-          <PageLabel position={'right'} offset={'60%'} >
+          <PageLabel position={'right'} offset={'60%'}>
             Why are we here
           </PageLabel>
           <Container>
@@ -110,14 +109,19 @@ export default () => {
                   pt: 4,
                 }}
               >
-                <Heading variant="sub2" pb={3}>ARE WE THERE YET?</Heading>
+                <Heading variant="sub2" pb={3}>
+                  ARE WE THERE YET?
+                </Heading>
                 <Text as="p">
-                  <Heading variant="sub2" sx={{display: 'inline'}}>It</Heading> may seem like a fairly easy question. Yet some of the
-                  simplest questions in life can lead us to think deeply about
-                  ourselves, our work, and the world around us. Are-we-there-yet
-                  is a space where designers, artists, and thinkers alike can
-                  converge to discuss where do we go next based on projects,
-                  ideas, aesthetic and philosophies that inspires us today.
+                  <Heading variant="sub2" sx={{ display: 'inline' }}>
+                    It
+                  </Heading>{' '}
+                  may seem like a fairly easy question. Yet some of the simplest
+                  questions in life can lead us to think deeply about ourselves,
+                  our work, and the world around us. Are-we-there-yet is a space
+                  where designers, artists, and thinkers alike can converge to
+                  discuss where do we go next based on projects, ideas,
+                  aesthetic and philosophies that inspires us today.
                 </Text>
                 <Text>
                   In the face of recent trials, creativity is manifesting itself
@@ -137,20 +141,22 @@ export default () => {
         <Box
           sx={{
             position: 'relative',
-            overflow: 'hidden'
+            overflow: 'hidden',
           }}
         >
-                    <PageLabel position={'left'} offset={'30%'}>
+          <PageLabel position={'left'} offset={'30%'}>
             Speakers
           </PageLabel>
 
-          <PageLabel position={'right'} offset={'60%'} >
+          <PageLabel position={'right'} offset={'60%'}>
             Speakers
           </PageLabel>
 
-          <Container sx={{
-            py: 5
-          }}>
+          <Container
+            sx={{
+              py: 5,
+            }}
+          >
             <PolyBg />
             <PolyRight />
             <Grid columns={2}>

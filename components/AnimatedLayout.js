@@ -1,20 +1,7 @@
 /** @jsx jsx */
 
 import { useState, createRef, useRef, useEffect } from 'react';
-import {
-  jsx,
-  Styled,
-  Container,
-  Text,
-  Flex,
-  Box,
-  Image,
-  Heading,
-  Input,
-  Grid,
-  Button,
-  IconButton,
-} from 'theme-ui';
+import { jsx, Box } from 'theme-ui';
 import { useSpring, a, config } from 'react-spring';
 import { useDrag } from 'react-use-gesture';
 import Nav from '../components/Nav';
@@ -34,9 +21,13 @@ const AnimatedLayout = ({ children }) => {
   const bind = useDrag(
     ({ down, first, last, vxvy: [vx], movement: [mx], cancel, canceled }) => {
       if (mx < width * 0.7) {
-        close(vx)
+        close(vx);
       } else {
-      set({ x: down ? mx : width, immediate: down, config: { duration: 100 } });
+        set({
+          x: down ? mx : width,
+          immediate: down,
+          config: { duration: 100 },
+        });
       }
     },
     {
@@ -88,7 +79,7 @@ const AnimatedLayout = ({ children }) => {
           width: '100vw',
           top: 0,
           left: 0,
-          position:'fixed',
+          position: 'fixed',
           zIndex: 3,
           height: '100vh',
           bg: 'rgba(0,0,0,0.5)',
@@ -97,22 +88,20 @@ const AnimatedLayout = ({ children }) => {
         onClick={() => {
           if (x.get() > 10) close(1);
         }}
-      >
-       
-      </a.div>
+      ></a.div>
       <a.div
-          sx={{
-            position: 'fixed',
-            bg: 'rgba(255, 255, 255, 0.1)',
-            zIndex: 2,
-            top: 0,
-            left: 0,
-            right: 0,
-          }}
-        >
-          <Header onNavOpen={open} />
-        </a.div>
-        {children}
+        sx={{
+          position: 'fixed',
+          bg: 'rgba(255, 255, 255, 0.1)',
+          zIndex: 2,
+          top: 0,
+          left: 0,
+          right: 0,
+        }}
+      >
+        <Header onNavOpen={open} />
+      </a.div>
+      {children}
     </>
   );
 };

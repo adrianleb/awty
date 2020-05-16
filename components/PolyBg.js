@@ -1,17 +1,4 @@
-import {
-  jsx,
-  Styled,
-  Container,
-  Text,
-  Flex,
-  Box,
-  Image,
-  Heading,
-  Input,
-  Grid,
-  Button,
-  IconButton,
-} from 'theme-ui';
+import { Box, IconButton } from 'theme-ui';
 import icons from '../components/Icons';
 
 const PolyBg = () => {

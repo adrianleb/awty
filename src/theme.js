@@ -2,14 +2,14 @@ const theme = {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   sizes: {
     container: 900,
-    photos: 46
+    photos: 46,
   },
   fonts: {
     body: '"Source Sans Pro", sans-serif',
     heading: '"porter-sans", serif',
-    heading2: '"Jost", sans-serif'
+    heading2: '"Jost", sans-serif',
   },
-  
+
   fontSizes: [12, 14, 16, 24, 32, 48, 64, 96, 128],
   fontWeights: {
     body: 400,
@@ -22,14 +22,15 @@ const theme = {
     heading: 1.4,
   },
   radii: {
-    round: '50px'
+    round: '50px',
   },
   colors: {
     text: '#333333',
     background: '#fff',
     background2: '#ffe7e7',
     background3: '#cefff3',
-    backgroundGradient: 'linear-gradient(137deg, #12c6d9 5%, #ffc6fe 46%, #00ff8d 100%)',
+    backgroundGradient:
+      'linear-gradient(137deg, #12c6d9 5%, #ffc6fe 46%, #00ff8d 100%)',
     primary: '#333333',
     onPrimary: '#fff',
     accent: '#F30000',
@@ -39,85 +40,85 @@ const theme = {
       dark: {
         text: '#fff',
         background: '#000',
-      }
-    }
+      },
+    },
   },
   forms: {
     label: {
       fontSize: 3,
-      fontWeight: "semiBold",
+      fontWeight: 'semiBold',
       py: 2,
     },
     input: {
-      outline: "none",
-      borderRadius: "small",
-      borderColor: "muted",
-      color: "text",
+      outline: 'none',
+      borderRadius: 'small',
+      borderColor: 'muted',
+      color: 'text',
       p: 2,
-      "&:focus": {
-        borderColor: "mutedAlt",
-        color: "text",
+      '&:focus': {
+        borderColor: 'mutedAlt',
+        color: 'text',
       },
     },
     inputError: {
-      variant: "forms.input",
-      borderColor: "error",
-      color: "text",
-      "&:focus": {
-        borderColor: "error",
-        color: "text",
+      variant: 'forms.input',
+      borderColor: 'error',
+      color: 'text',
+      '&:focus': {
+        borderColor: 'error',
+        color: 'text',
       },
     },
-    textarea: { variant: "forms.input" },
-    textareaError: { variant: "forms.inputError" },
-    select: { variant: "forms.input" },
+    textarea: { variant: 'forms.input' },
+    textareaError: { variant: 'forms.inputError' },
+    select: { variant: 'forms.input' },
     slider: {
-      height: "2px",
-      borderRadius: "small",
-      color: "text",
-      "&:active, &:hover, &:focus": {
-        color: "primary",
-        bg: "primary",
-        "&::-webkit-slider-thumb": {
+      height: '2px',
+      borderRadius: 'small',
+      color: 'text',
+      '&:active, &:hover, &:focus': {
+        color: 'primary',
+        bg: 'primary',
+        '&::-webkit-slider-thumb': {
           boxShadow: (theme) => theme.shadows.lightPrimary,
         },
       },
     },
     sliderActive: {
-      variant: "forms.slider",
-      color: "primary",
-      bg: "primary",
+      variant: 'forms.slider',
+      color: 'primary',
+      bg: 'primary',
     },
     radio: {
-      color: "muted",
-      "input:checked ~ &": {
-        color: "primary",
+      color: 'muted',
+      'input:checked ~ &': {
+        color: 'primary',
       },
-      "input:focus ~ &": {
-        bg: "successMuted",
+      'input:focus ~ &': {
+        bg: 'successMuted',
       },
     },
     checkbox: {
-      color: "muted",
-      "input:checked ~ &": {
-        color: "primary",
+      color: 'muted',
+      'input:checked ~ &': {
+        color: 'primary',
       },
-      "input:focus ~ &": {
-        color: "primary",
-        bg: "successMuted",
+      'input:focus ~ &': {
+        color: 'primary',
+        bg: 'successMuted',
       },
     },
   },
   text: {
-    text: {variant: 'styles.p', fontSize: 2},
+    text: { variant: 'styles.p', fontSize: 2 },
     massive: {
-      fontSize: 8
+      fontSize: 8,
     },
     logo: {
-      fontSize: 3
+      fontSize: 3,
     },
     sub: {
-      fontFamily: 'heading2'
+      fontFamily: 'heading2',
     },
     sub2: {
       lineHeight: 'heading2',
@@ -126,28 +127,27 @@ const theme = {
       fontWeight: 'bold',
       letterSpacing: '0.05em',
       fontSize: 4,
-      textTransform: 'uppercase'
+      textTransform: 'uppercase',
     },
     sub4: {
       // color: 'text',
       variant: 'text.sub2',
 
       fontSize: 2,
-      textTransform: 'uppercase'
-
+      textTransform: 'uppercase',
     },
     pageLabel: {
       variant: 'text.sub4',
-      fontSize: 0
-    }
+      fontSize: 0,
+    },
   },
   links: {
     nav: {
       display: 'block',
       variant: 'text.sub4',
       px: 0,
-      p: 0
-    }
+      p: 0,
+    },
   },
   buttons: {
     primary: {
@@ -160,15 +160,14 @@ const theme = {
       borderRadius: '5px',
       color: 'onPrimary',
       py: 2,
-      px: 4
+      px: 4,
     },
     text: {
       variant: 'buttons.primary',
       bg: 'transparent',
       textDecoration: 'underline',
-      color: 'text'
-
-    }
+      color: 'text',
+    },
   },
   styles: {
     root: {
@@ -229,11 +228,11 @@ const theme = {
       // m: 0
     },
     sup: {
-      fontWeight: 600
+      fontWeight: 600,
     },
     a: {
       color: 'primary',
-      p: 0
+      p: 0,
     },
     pre: {
       fontFamily: 'monospace',

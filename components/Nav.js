@@ -1,20 +1,15 @@
 /** @jsx jsx */
 
-import { useState, createRef, useRef, useEffect } from 'react';
-
 import { Box, jsx, NavLink, Heading } from 'theme-ui';
-import clamp from 'lodash.clamp';
-import { useGesture } from 'react-with-gesture';
 
-import { useSpring, a, config } from 'react-spring';
-import { useDrag } from 'react-use-gesture';
-
-const Drawer = ({ isOpen, onClose, width = 200 }) => {
+const Drawer = () => {
   return (
-    <Box sx={{
-      p: 4,
-      pt: 3
-    }}>
+    <Box
+      sx={{
+        p: 4,
+        pt: 3,
+      }}
+    >
       <Heading
         variant="logo"
         sx={{
@@ -24,9 +19,11 @@ const Drawer = ({ isOpen, onClose, width = 200 }) => {
         AWTY
       </Heading>
 
-      <Box sx={{
-        pt: 4
-      }}>
+      <Box
+        sx={{
+          pt: 4,
+        }}
+      >
         <NavLink href="#!" p={2}>
           Home
         </NavLink>
