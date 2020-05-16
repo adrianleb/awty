@@ -1,3 +1,5 @@
+/** @jsx jsx */
+
 import {
   jsx,
   Styled,
@@ -19,7 +21,17 @@ const SpeakerCard = ({ title, name, photo, time, jobTitle }) => {
         p: 4,
       }}
     >
-      <Heading>{title}</Heading>
+      <Heading variant="styledsub3">
+        <span
+          sx={{
+            variant: 'styles.sub3bg',
+            // bg: 'primary',
+            // boxShadow: () => `0.4em 0 0 #000, -0.4em 0 0 #000`,
+          }}
+        >
+          {title} sad fd dsg sg df as
+        </span>
+      </Heading>
       <Grid columns={'auto auto'}>
         <Grid
           columns={'repeat(2, auto)'}
@@ -41,20 +53,21 @@ const SpeakerCard = ({ title, name, photo, time, jobTitle }) => {
               rowGap: 0,
             }}
           >
-            <Text>{name}</Text>
+            <Text variant="boldedP">{name}</Text>
             <Text>{jobTitle}</Text>
           </Grid>
         </Grid>
         <Grid
           sx={{
-            borderLeft: '2px solid red',
-            px: 2,
+            borderLeft: '2px solid',
+            borderColor: 'accent',
+            px: 3,
             rowGap: 0,
           }}
         >
-          <Text>date</Text>
-          <Text>date</Text>
-          <Text>date</Text>
+          <Text>{time.tz('America/Los_Angeles').format('ha z')}</Text>
+          <Text>{time.tz('Europe/Amsterdam').format('ha z')}</Text>
+          <Text>{time.tz('Asia/Tokyo').format('ha z')}</Text>
         </Grid>
       </Grid>
     </Box>

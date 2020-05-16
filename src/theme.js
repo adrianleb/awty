@@ -129,12 +129,24 @@ const theme = {
       fontSize: 4,
       textTransform: 'uppercase',
     },
-    sub4: {
-      // color: 'text',
+    sub3: {
       variant: 'text.sub2',
+      fontSize: 3,
+    },
 
+    styledsub3: {
+      variant: 'text.sub3',
+      color: 'background',
+      lineHeight: 1.7,
+    },
+    sub4: {
+      variant: 'text.sub2',
       fontSize: 2,
-      textTransform: 'uppercase',
+    },
+    boldedP: {
+      fontSize: 3,
+      fontFamily: 'body',
+      fontWeight: 'bold',
     },
     pageLabel: {
       variant: 'text.sub4',
@@ -170,6 +182,12 @@ const theme = {
     },
   },
   styles: {
+    sub3bg: {
+      color: 'background',
+      bg: 'primary',
+      boxShadow: (theme) =>
+        `0.4em 0 0 ${theme.colors.primary}, -0.4em 0 0 ${theme.colors.primary}`,
+    },
     root: {
       fontFamily: 'body',
       lineHeight: 'body',

@@ -21,6 +21,7 @@ import Poly from '../components/Poly';
 import PolyBg from '../components/PolyBg';
 import PolyRight from '../components/PolyRight';
 import SpeakerCard from '../components/SpeakerCard';
+import SpeakersLayout from '../components/SpeakersLayout';
 import speakers from '../content/speakers';
 import dynamic from 'next/dynamic';
 const Bg = dynamic(() => import('../components/Bg'), { ssr: false });
@@ -159,6 +160,7 @@ export default () => {
           >
             <PolyBg />
             <PolyRight />
+            <SpeakersLayout />
             <Grid columns={2}>
               {speakers.map(({ title, name, photo, time, jobTitle }) => {
                 return (

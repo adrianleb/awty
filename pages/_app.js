@@ -4,7 +4,8 @@ import Head from 'next/head';
 import { Global, css } from '@emotion/core';
 import theme from '../src/theme';
 import { ThemeProvider } from 'theme-ui';
-
+import Moment from 'react-moment';
+import 'moment-timezone';
 export default class App extends NextApp {
   render() {
     const { Component, pageProps } = this.props;
@@ -19,7 +20,6 @@ export default class App extends NextApp {
             href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&amp;display=swap"
             rel="stylesheet"
           />
-
         </Head>
         <Global
           styles={css`
