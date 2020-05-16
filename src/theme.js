@@ -115,9 +115,40 @@ const theme = {
     },
     logo: {
       fontSize: 3
+    },
+    sub: {
+      fontFamily: 'heading2'
+    },
+    sub2: {
+      lineHeight: 'heading2',
+      fontWeight: 'heading2',
+      fontFamily: 'heading2',
+      fontWeight: 'bold',
+      letterSpacing: '0.05em',
+      fontSize: 4,
+      textTransform: 'uppercase'
+    },
+    sub4: {
+      // color: 'text',
+      variant: 'text.sub2',
+
+      fontSize: 2,
+      textTransform: 'uppercase'
+
+    },
+    pageLabel: {
+      variant: 'text.sub4',
+      fontSize: 0
     }
   },
-
+  links: {
+    nav: {
+      display: 'block',
+      variant: 'text.sub4',
+      px: 0,
+      p: 0
+    }
+  },
   buttons: {
     primary: {
       background: 'primary',
@@ -202,6 +233,7 @@ const theme = {
     },
     a: {
       color: 'primary',
+      p: 0
     },
     pre: {
       fontFamily: 'monospace',

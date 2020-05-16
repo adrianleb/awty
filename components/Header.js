@@ -2,16 +2,18 @@ import React from 'react'
 import { Button, useColorMode, Heading, Flex, MenuButton, IconButton, Grid } from 'theme-ui'
 import icons from './Icons';
 
-const Header = () => {
+const Header = ({onNavOpen}) => {
   const [colorMode, setColorMode] = useColorMode()
   const {tw, fb, insta, moon} = icons;
   return (
     <Grid columns={3} sx={{
       alignItems: 'center',
-      p: 3
+      zIndex: 100,
+      p: 3,
+      px: 4
     }}>
 
-      <MenuButton/>
+      <MenuButton onClick={onNavOpen}/>
 
       <Heading variant="logo" sx={{
         mx: 'auto'
