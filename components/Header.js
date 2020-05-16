@@ -15,7 +15,7 @@ const Header = ({ onNavOpen }) => {
   const { tw, fb, insta, moon } = icons;
   return (
     <Grid
-      columns={3}
+      columns={['32px 1fr 1fr', 3]}
       sx={{
         alignItems: 'center',
         zIndex: 100,
@@ -29,6 +29,7 @@ const Header = ({ onNavOpen }) => {
         variant="logo"
         sx={{
           mx: 'auto',
+          ml: [0, 'auto'],
         }}
       >
         AWTY
