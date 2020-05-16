@@ -79,7 +79,7 @@ const Bg = ({ url, objKey, key }) => {
       <Suspense fallback={null}>
         <Test colors={theme.colors} url={url} objKey={objKey} />
       </Suspense>
-      <OrbitControls />
+      <OrbitControls enableZoom={false} />
     </Canvas>
   );
 };
