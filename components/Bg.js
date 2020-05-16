@@ -12,6 +12,7 @@ import { LineMaterial } from 'three/examples/jsm/lines/LineMaterial';
 import { WireframeGeometry2 } from 'three/examples/jsm/lines/WireframeGeometry2';
 import { Wireframe } from 'three/examples/jsm/lines/Wireframe';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { OrbitControls, StandardEffects, draco } from 'drei';
 
 extend({ LineMaterial, WireframeGeometry2, Wireframe });
 
@@ -56,7 +57,7 @@ const Bg = ({ url, objKey }) => {
       camera={{ position: [0, 0, 1] }}
       style={{
         position: 'absolute',
-        zIndex: -1,
+        // zIndex: -1,
         // height: '100%',
         width: '100vw',
         top: 0,
@@ -70,6 +71,7 @@ const Bg = ({ url, objKey }) => {
       <Suspense fallback={null}>
         <Test colors={theme.colors} url={url} objKey={objKey} />
       </Suspense>
+      <OrbitControls />
     </Canvas>
   );
 };

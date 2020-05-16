@@ -18,6 +18,7 @@ const Poly = () => {
           zIndex: 1,
           pointerEvents: 'none',
           stroke: 'text',
+          fill: 'transparent',
         }}
       >
         {icons.poly}

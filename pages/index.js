@@ -45,10 +45,12 @@ export default () => {
 
           <Container
             sx={{
+              position: 'relative',
               textAlign: 'center',
               // py: 3,
               pt: 6,
               pb: 5,
+              zIndex: 2,
             }}
           >
             <Heading
