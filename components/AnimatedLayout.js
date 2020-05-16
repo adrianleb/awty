@@ -106,7 +106,7 @@ const AnimatedLayout = ({ children }) => {
           top: 0,
           left: 0,
           position: 'fixed',
-          zIndex: 3,
+          zIndex: 7,
           height: '100vh',
           bg: 'rgba(0,0,0,0.5)',
         }}
@@ -119,7 +119,7 @@ const AnimatedLayout = ({ children }) => {
         sx={{
           position: 'fixed',
           // bg: () => `rgba(255, 255, 255, 0.1)`,
-          zIndex: 2,
+          zIndex: 5,
           top: 0,
           left: 0,
           right: 0,
