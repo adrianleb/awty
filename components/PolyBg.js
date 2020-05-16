@@ -16,6 +16,8 @@ const PolyBg = () => {
       <IconButton
         sx={{
           width: '700px',
+          stroke: 'transparent',
+          fill: 'accent',
         }}
       >
         {icons.poly2}

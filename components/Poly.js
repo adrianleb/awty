@@ -1,9 +1,4 @@
-import {
-
-  Flex,
-
-  IconButton,
-} from 'theme-ui';
+import { Flex, IconButton } from 'theme-ui';
 
 import icons from './Icons';
 
@@ -22,6 +17,7 @@ const Poly = () => {
           // margin: '0 auto',
           zIndex: 1,
           pointerEvents: 'none',
+          stroke: 'text',
         }}
       >
         {icons.poly}

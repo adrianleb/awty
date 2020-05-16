@@ -89,12 +89,12 @@ const icons = {
       width="42"
       height="37"
       viewBox="0 0 42 37"
-      fill="none"
+      fill="inherit"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M41.121 0.939716L21.3224 35.2319L1.52374 0.939716L41.121 0.939716Z"
-        stroke="#333333"
+        stroke="inherit"
       />
     </svg>
   ),
@@ -103,12 +103,12 @@ const icons = {
       width="641"
       height="1120"
       viewBox="0 0 641 1120"
-      fill="none"
+      fill="inherit"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M640.113 560.013L-328.796 1119.41L-328.796 0.612732L640.113 560.013Z"
-        fill="#EB5757"
+        fill="inherit"
       />
     </svg>
   ),

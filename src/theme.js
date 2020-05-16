@@ -47,6 +47,8 @@ const theme = {
         onPrimary: '#000',
         background: '#000',
         background2: '#001818',
+        background3: '#31000C',
+        accent: '#0CFFFF',
       },
     },
   },

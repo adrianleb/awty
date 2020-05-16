@@ -12,13 +12,15 @@ const PolyRight = () => {
         bottom: 0,
         right: '-900px',
         pt: '50%',
-        opacity: 0.1,
+        // opacity: 0.1,
       }}
     >
       <IconButton
         sx={{
           width: '700px',
           transform: 'rotate(60deg)',
+          stroke: 'transparent',
+          fill: 'background2',
         }}
       >
         {icons.poly2}
