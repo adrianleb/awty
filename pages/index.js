@@ -44,27 +44,35 @@ export default () => {
           <Container
             sx={{
               textAlign: 'center',
-              py: 3,
+              // py: 3,
               pt: 6,
               pb: 5,
             }}
           >
-            <Styled.h1
+            <Heading
+              variant="massive"
               sx={{
                 textAlign: 'center',
                 color: 'accent',
               }}
             >
               Are We There Yet
-            </Styled.h1>
-            <Heading variant="sub4">
+            </Heading>
+            <Heading
+              variant="sub4"
+              sx={{
+                py: [3],
+                px: [5, 0],
+                pt: [4],
+              }}
+            >
               Micro festival showcasing lightning talks on the future of
               creativity
             </Heading>
             <Heading variant="sub4">May 31, June 1-2, 2020</Heading>
 
             <Grid
-              gap={2}
+              gap={[1, 2]}
               columns={'repeat(2, auto)'}
               sx={{
                 my: 4,
@@ -98,10 +106,11 @@ export default () => {
             <Grid
               gap={4}
               rowGap={4}
-              columns={'repeat(2, auto)'}
+              columns={[1, 'repeat(2, auto)']}
               sx={{
                 my: 5,
                 justifyContent: 'center',
+                px: [5, 0],
               }}
             >
               <Image src="/rainbow.gif" />
@@ -161,13 +170,6 @@ export default () => {
             <PolyBg />
             <PolyRight />
             <SpeakersLayout />
-            <Grid columns={2}>
-              {speakers.map(({ title, name, photo, time, jobTitle }) => {
-                return (
-                  <SpeakerCard {...{ title, name, photo, time, jobTitle }} />
-                );
-              })}
-            </Grid>
           </Container>
         </Box>
         <Footer />

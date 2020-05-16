@@ -41,6 +41,7 @@ const SpeakersLayout = ({}) => {
           <Box
             sx={{
               py: 5,
+              px: [4, 0],
             }}
           >
             <Heading
@@ -51,7 +52,7 @@ const SpeakersLayout = ({}) => {
             >
               {k}
             </Heading>
-            <Grid columns={2}>
+            <Grid columns={[1, 2]}>
               {sorted[k].map(({ title, name, photo, time, jobTitle }) => {
                 return (
                   <SpeakerCard {...{ title, name, photo, time, jobTitle }} />

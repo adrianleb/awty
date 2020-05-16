@@ -20,7 +20,7 @@ const Header = ({ onNavOpen }) => {
         alignItems: 'center',
         zIndex: 100,
         p: 3,
-        px: 4,
+        px: [2, 4],
       }}
     >
       <MenuButton onClick={onNavOpen} />

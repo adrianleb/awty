@@ -112,10 +112,10 @@ const theme = {
   text: {
     text: { variant: 'styles.p', fontSize: 2 },
     massive: {
-      fontSize: 8,
+      fontSize: [4, 7],
     },
     logo: {
-      fontSize: 3,
+      fontSize: [1, 3],
     },
     sub: {
       fontFamily: 'heading2',
@@ -126,7 +126,7 @@ const theme = {
       fontFamily: 'heading2',
       fontWeight: 'bold',
       letterSpacing: '0.05em',
-      fontSize: 4,
+      fontSize: [3, 4],
       textTransform: 'uppercase',
     },
     sub3: {
@@ -141,7 +141,7 @@ const theme = {
     },
     sub4: {
       variant: 'text.sub2',
-      fontSize: 2,
+      fontSize: [1, 2],
     },
     boldedP: {
       fontSize: 3,
@@ -166,7 +166,7 @@ const theme = {
       background: 'primary',
       fontFamily: 'heading2',
       letterSpacing: 1,
-      fontSize: 3,
+      fontSize: [2, 3],
       fontWeight: 'bold',
       textTransform: 'uppercase',
       borderRadius: '5px',
@@ -181,6 +181,12 @@ const theme = {
       color: 'text',
     },
   },
+  layout: {
+    container: {
+      px: [2],
+    },
+  },
+
   styles: {
     sub3bg: {
       color: 'background',
