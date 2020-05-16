@@ -32,7 +32,6 @@ const SpeakersLayout = ({}) => {
       prev[date] = [...arr, next];
       return prev;
     }, {});
-  // console.log(byDay);
 
   return (
     <>

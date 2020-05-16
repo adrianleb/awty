@@ -57,12 +57,6 @@ const AnimatedLayout = ({ children }) => {
   );
 
   const display = x.to((px) => (px > 0 ? 'block' : 'none'));
-
-  console.log(
-    theme,
-    theme.colors.background,
-    transparentize(theme.colors.background, 1)()
-  );
   const headerStyles = {
     backgroundColor: st.to(
       [0, 500],

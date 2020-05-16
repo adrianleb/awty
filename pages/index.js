@@ -28,6 +28,17 @@ import dynamic from 'next/dynamic';
 const Bg = dynamic(() => import('../components/Bg'), { ssr: false });
 
 export default () => {
+  const shapes = [
+    // ['/headless.glb', 'Cube', [1, 1, 1]],
+    ['/Box.glb', 'mesh_0', [0.8, 0.8, 0.8]],
+    // ['/Avocado.glb', 'Avocado', [1, 1, 1]],
+    // ['/Duck.glb', 'LOD3spShape'],
+  ];
+
+  const sample = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+  const [objurl, objkey, objscale] = sample(shapes);
+
   const ref = useRef(null);
   return (
     <AnimatedLayout>
@@ -41,7 +52,12 @@ export default () => {
             position: 'relative',
           }}
         >
-          <Bg url="/headless.glb" objKey={'Cube'} />
+          <Bg
+            key={`${objurl}_${objkey}`}
+            url={objurl}
+            objKey={objkey}
+            scale={objscale}
+          />
 
           <Container
             sx={{

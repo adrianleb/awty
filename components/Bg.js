@@ -16,11 +16,12 @@ import { OrbitControls, StandardEffects, draco } from 'drei';
 
 extend({ LineMaterial, WireframeGeometry2, Wireframe });
 
-function Test({ colors, url, objKey }) {
+function Test({ colors, url, objKey, res = 1024, scale }) {
   //const { size } = useThree()
   //const resolution = useMemo(() => [size.width, size.height], [])
-  const resolution = useMemo(() => [1024, 1024], []);
+  const resolution = useMemo(() => [res, res], []);
   const { nodes } = useLoader(GLTFLoader, url);
+  // console.log(nodes, 'yo', url);
   const group = useRef();
   const lines = useUpdate(
     (geo) =>
@@ -32,7 +33,13 @@ function Test({ colors, url, objKey }) {
       (group.current.rotation.x = group.current.rotation.y = group.current.rotation.z += 0.0001)
   );
   return (
-    <group ref={group} dispose={null}>
+    <group
+      ref={group}
+      dispose={null}
+      scale={scale}
+      position={[0, 0, 0]}
+      key="shape_1"
+    >
       <wireframe renderOrder={1000}>
         <wireframeGeometry2 attach="geometry" ref={lines} />
         <lineMaterial
@@ -48,11 +55,12 @@ function Test({ colors, url, objKey }) {
     </group>
   );
 }
-const Bg = ({ url, objKey }) => {
+const Bg = ({ url, objKey, key }) => {
   const { theme } = useThemeUI();
   return (
     <Canvas
       sRGB
+      key={key}
       pixelRatio={window.devicePixelRatio}
       camera={{ position: [0, 0, 1] }}
       style={{
