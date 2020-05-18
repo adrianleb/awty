@@ -202,9 +202,16 @@ const theme = {
   styles: {
     sub3bg: {
       color: 'background',
-      bg: 'primary',
-      boxShadow: (theme) =>
-        `0.4em 0 0 ${theme.colors.primary}, -0.4em 0 0 ${theme.colors.primary}`,
+      position: 'relative',
+
+      backgroundImage: (theme) =>
+        `linear-gradient(110deg, transparent 50%, ${theme.colors.primary} 53%), linear-gradient(110deg, ${theme.colors.primary} 50%, transparent 53%), linear-gradient(to left, ${theme.colors.primary}, ${theme.colors.primary})`,
+      backgroundSize: '16px 100%, 16px 100%, calc(100% - 32px) 100%',
+      backgroundPosition: 'left, right, center',
+      backgroundRepeat: 'no-repeat',
+      display: 'inline',
+      px: 3,
+      boxDecorationBreak: 'clone',
     },
     root: {
       fontFamily: 'body',

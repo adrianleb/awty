@@ -22,6 +22,7 @@
     "next": "^9.3.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-gtm-module": "^2.0.8",
     "react-moment": "^0.9.7",
     "react-spring": "^9.0.0-rc.3",
     "react-three-fiber": "^4.2.4",

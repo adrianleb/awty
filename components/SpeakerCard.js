@@ -21,7 +21,12 @@ const SpeakerCard = ({ title, name, photo, time, jobTitle }) => {
         p: 4,
       }}
     >
-      <Heading variant="styledsub3">
+      <Heading
+        variant="styledsub3"
+        sx={{
+          mb: 3,
+        }}
+      >
         <span
           sx={{
             variant: 'styles.sub3bg',
@@ -29,6 +34,7 @@ const SpeakerCard = ({ title, name, photo, time, jobTitle }) => {
             // boxShadow: () => `0.4em 0 0 #000, -0.4em 0 0 #000`,
           }}
         >
+          {' '}
           {title} sad fd dsg sg df as
         </span>
       </Heading>
@@ -51,7 +57,6 @@ const SpeakerCard = ({ title, name, photo, time, jobTitle }) => {
           <Grid
             sx={{
               rowGap: 0,
-              marginTop: '25px',
             }}
           >
             <Text variant="boldedP">{name}</Text>
@@ -62,7 +67,6 @@ const SpeakerCard = ({ title, name, photo, time, jobTitle }) => {
           sx={{
             borderLeft: '2px solid',
             borderColor: 'accent',
-            marginTop: '25px',
             px: 3,
             rowGap: 0,
           }}
