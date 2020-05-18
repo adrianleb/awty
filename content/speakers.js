@@ -64,7 +64,7 @@ const speakers = [
     title: 'Implemented background neural-net',
     name: 'Sheridan Wrankmore',
     jobTitle: 'Legal Assistant',
-    time: '2020-05-31T11:00',
+    time: '2020-05-31T17:00',
     photo:
       'https://robohash.org/laborumautemdistinctio.jpg?size=200x200&set=set1',
   },
@@ -72,21 +72,21 @@ const speakers = [
     title: 'Mandatory 24 hour interface',
     name: 'Dorise Walsh',
     jobTitle: 'Quality Engineer',
-    time: '2020-06-01T11:00',
+    time: '2020-06-01T21:00',
     photo: 'https://robohash.org/etrepudiandaeautem.png?size=200x200&set=set1',
   },
   {
     title: 'Secured 5th generation open system',
     name: 'Heindrick Whitby',
     jobTitle: 'VP Quality Control',
-    time: '2020-06-01T11:00',
+    time: '2020-06-02T11:00',
     photo: 'https://robohash.org/abestvoluptatem.jpg?size=200x200&set=set1',
   },
   {
     title: 'Multi-layered global artificial intelligence',
     name: 'Francklyn Perview',
     jobTitle: 'Programmer III',
-    time: '2020-05-31T11:00',
+    time: '2020-06-02T16:00',
     photo: 'https://robohash.org/voluptascumquequia.jpg?size=200x200&set=set1',
   },
   {
@@ -157,7 +157,7 @@ const speakers = [
     title: 'Multi-layered optimal pricing structure',
     name: 'Dacy Gonoude',
     jobTitle: 'Food Chemist',
-    time: '2020-05-31T11:00',
+    time: '2020-06-02T09:00',
     photo:
       'https://robohash.org/omnisrepudiandaedoloremque.png?size=200x200&set=set1',
   },
