@@ -34,8 +34,7 @@ const SpeakerCard = ({ title, name, photo, time, jobTitle }) => {
             // boxShadow: () => `0.4em 0 0 #000, -0.4em 0 0 #000`,
           }}
         >
-          {' '}
-          {title} sad fd dsg sg df as
+          {title}
         </span>
       </Heading>
       <Grid columns={'auto auto'}>
