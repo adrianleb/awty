@@ -51,6 +51,7 @@ const SpeakerCard = ({ title, name, photo, time, jobTitle }) => {
           <Grid
             sx={{
               rowGap: 0,
+              marginTop: '25px',
             }}
           >
             <Text variant="boldedP">{name}</Text>
@@ -61,6 +62,7 @@ const SpeakerCard = ({ title, name, photo, time, jobTitle }) => {
           sx={{
             borderLeft: '2px solid',
             borderColor: 'accent',
+            marginTop: '25px',
             px: 3,
             rowGap: 0,
           }}
