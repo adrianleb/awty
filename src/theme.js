@@ -135,7 +135,7 @@ const theme = {
       fontFamily: 'heading2',
       fontWeight: 'bold',
       letterSpacing: '0.05em',
-      fontSize: [2, 3],
+      fontSize: [1, 2],
       textTransform: 'uppercase',
     },
     sub3: {
@@ -156,7 +156,7 @@ const theme = {
       color: 'accent',
     },
     boldedP: {
-      fontSize: 3,
+      fontSize: 2,
       fontFamily: 'body',
       fontWeight: 'bold',
     },
