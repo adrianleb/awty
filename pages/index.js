@@ -139,7 +139,7 @@ export default () => {
                   pt: 4,
                 }}
               >
-                <Heading variant="sub2" pb={3}>
+                <Heading variant="sub5" pb={3}>
                   ARE WE THERE YET?
                 </Heading>
                 <Text as="p">

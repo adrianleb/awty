@@ -48,6 +48,7 @@ const SpeakersLayout = ({}) => {
               sx={{
                 textAlign: 'center',
                 marginBottom: '5',
+                color: 'accent',
               }}
             >
               {k}

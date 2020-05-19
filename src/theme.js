@@ -153,7 +153,6 @@ const theme = {
     sub5: {
       variant: 'text.sub2',
       fontSize: [4,5],
-      color: 'accent',
     },
     boldedP: {
       fontSize: 2,
