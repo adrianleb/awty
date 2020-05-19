@@ -135,14 +135,12 @@ const theme = {
       fontFamily: 'heading2',
       fontWeight: 'bold',
       letterSpacing: '0.05em',
-      fontSize: [3, 4],
+      fontSize: [2, 3],
       textTransform: 'uppercase',
     },
     sub3: {
       variant: 'text.sub2',
-      fontSize: 3,
     },
-
     styledsub3: {
       variant: 'text.sub3',
       color: 'background',
@@ -151,6 +149,11 @@ const theme = {
     sub4: {
       variant: 'text.sub2',
       fontSize: [1, 2],
+    },
+    sub5: {
+      variant: 'text.sub2',
+      fontSize: [4,5],
+      color: 'accent',
     },
     boldedP: {
       fontSize: 3,

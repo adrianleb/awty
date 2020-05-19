@@ -44,9 +44,10 @@ const SpeakersLayout = ({}) => {
             }}
           >
             <Heading
-              variant="sub2"
+              variant="sub5"
               sx={{
                 textAlign: 'center',
+                marginBottom: '5',
               }}
             >
               {k}

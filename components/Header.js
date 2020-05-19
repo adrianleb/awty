@@ -46,11 +46,6 @@ const Header = ({ onNavOpen }) => {
         <IconButton>{insta}</IconButton>
         <IconButton>{fb}</IconButton>
         <IconButton
-          sx={{
-            bg: colorMode === 'light' ? 'primary' : 'text',
-            borderRadius: '50px',
-            stroke: 'background',
-          }}
           onClick={() => setColorMode(colorMode === 'light' ? 'dark' : 'light')}
         >
           {/* {colorMode === 'light' ? 'Dark' : 'Light'} */}
