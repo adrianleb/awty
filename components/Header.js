@@ -12,7 +12,7 @@ import icons from './Icons';
 
 const Header = ({ onNavOpen }) => {
   const [colorMode, setColorMode] = useColorMode();
-  const { tw, fb, insta, moon } = icons;
+  const { tw, fb, insta, moon, sun } = icons;
   return (
     <Grid
       columns={['32px 1fr 1fr', 3]}
@@ -48,9 +48,7 @@ const Header = ({ onNavOpen }) => {
         <IconButton
           onClick={() => setColorMode(colorMode === 'light' ? 'dark' : 'light')}
         >
-          {/* {colorMode === 'light' ? 'Dark' : 'Light'} */}
-
-          {moon}
+          {colorMode === 'light' ? moon : sun}
         </IconButton>
       </Grid>
     </Grid>

@@ -54,10 +54,8 @@ const SpeakersLayout = ({}) => {
               {k}
             </Heading>
             <Grid columns={[1, 2]}>
-              {sorted[k].map(({ title, name, photo, time, jobTitle }) => {
-                return (
-                  <SpeakerCard {...{ title, name, photo, time, jobTitle }} />
-                );
+              {sorted[k].map(({ title, time, speakers }) => {
+                return <SpeakerCard {...{ title, speakers, time }} />;
               })}
             </Grid>
           </Box>

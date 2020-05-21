@@ -15,6 +15,7 @@ import {
   IconButton,
 } from 'theme-ui';
 import PageLabel from '../components/PageLabel';
+import { useSpring, config } from 'react-spring';
 
 import AnimatedLayout from '../components/AnimatedLayout';
 import Footer from '../components/Footer';
@@ -29,7 +30,7 @@ const Bg = dynamic(() => import('../components/Bg'), { ssr: false });
 
 export default () => {
   const shapes = [
-    ['/headless.glb', 'Cube', [1, 1, 1]],
+    // ['/headless.glb', 'Cube', [1, 1, 1]],
     ['/Box.glb', 'mesh_0', [0.8, 0.8, 0.8]],
     // ['/Avocado.glb', 'Avocado', [1, 1, 1]],
     // ['/Duck.glb', 'LOD3spShape'],
@@ -38,8 +39,24 @@ export default () => {
   const sample = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
   const [objurl, objkey, objscale] = sample(shapes);
+  const aboutRef = useRef();
+  const programRef = useRef();
 
-  const ref = useRef(null);
+  const [y, setY] = useSpring(() => ({
+    // immediate: false,
+    // config: config.slow,
+    y: 0,
+    onChange: (props) => {
+      console.log('prosp', props);
+      window.scroll(0, props.y);
+    },
+  }));
+
+  console.log(y, 'lala');
+  const scrollToRef = (ref) => {
+    console.log('scrol?');
+    setY({ y: 300 });
+  };
   return (
     <AnimatedLayout>
       <Box
@@ -99,8 +116,21 @@ export default () => {
                 justifyContent: 'center',
               }}
             >
-              <Button>Ticket</Button>
-              <Button variant="text">Program</Button>
+              <Button
+                as="a"
+                href="https://www.eventbrite.com/e/are-we-there-yet-creative-festival-tickets-105513112560"
+              >
+                Ticket
+              </Button>
+              <Button
+                variant="text"
+                onClick={() => {
+                  setY(300);
+                  console.log('scroled?');
+                }}
+              >
+                Program
+              </Button>
             </Grid>
           </Container>
           <Poly />
@@ -115,14 +145,14 @@ export default () => {
             py: 5,
           }}
         >
-          <PageLabel position={'left'} offset={'40%'}>
+          <PageLabel position={'left'} offset={'30%'}>
             Who are we?
           </PageLabel>
 
           <PageLabel position={'right'} offset={'60%'}>
-            Why are we here
+            Why are we here?
           </PageLabel>
-          <Container>
+          <Container ref={aboutRef}>
             <Grid
               gap={4}
               rowGap={4}
@@ -169,18 +199,27 @@ export default () => {
         </Flex>
 
         <Box
+          ref={programRef}
           sx={{
             position: 'relative',
             overflow: 'hidden',
           }}
         >
-          <PageLabel position={'left'} offset={'30%'}>
+          <PageLabel position={'left'} offset={'10%'}>
             Speakers
           </PageLabel>
 
-          <PageLabel position={'right'} offset={'60%'}>
+          <PageLabel position={'left'} offset={'70%'}>
             Speakers
           </PageLabel>
+
+          <PageLabel position={'right'} offset={'40%'}>
+            Speakers
+          </PageLabel>
+          {/* 
+          <PageLabel position={'right'} offset={'80%'}>
+            Speakers
+          </PageLabel> */}
 
           <Container
             sx={{
@@ -188,7 +227,7 @@ export default () => {
             }}
           >
             <PolyBg />
-            <PolyRight />
+            <PolyRight offset={'50%'} />
             <SpeakersLayout />
           </Container>
         </Box>

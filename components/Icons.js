@@ -66,98 +66,98 @@ const icons = {
     </svg>
   ),
   moon: (
-    <svg 
-      width="26" 
-      height="24" 
-      viewBox="5 3 25 25" 
-      fill="none" 
+    <svg
+      width="26"
+      height="24"
+      viewBox="5 3 25 25"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path 
-        fill-rule="evenodd" 
-        clip-rule="evenodd" 
-        d="M26.9715 18.0578C26.5131 23.0179 22.2747 26.7651 17.2958 26.6121C12.317 26.4591 8.31656 22.4587 8.16358 17.4799C8.0106 12.501 11.7578 8.26257 16.7179 7.8042C14.5607 10.7226 14.8633 14.78 17.4295 17.3462C19.9957 19.9124 24.0531 20.215 26.9715 18.0578Z" 
-        stroke="#333333" 
-        stroke-width="2" 
-        stroke-linecap="round" 
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M26.9715 18.0578C26.5131 23.0179 22.2747 26.7651 17.2958 26.6121C12.317 26.4591 8.31656 22.4587 8.16358 17.4799C8.0106 12.501 11.7578 8.26257 16.7179 7.8042C14.5607 10.7226 14.8633 14.78 17.4295 17.3462C19.9957 19.9124 24.0531 20.215 26.9715 18.0578Z"
+        stroke="inherit"
+        stroke-width="2"
+        stroke-linecap="round"
         stroke-linejoin="round"
       />
     </svg>
   ),
   sun: (
-    <svg 
-      width="24" 
-      height="25" 
-      viewBox="0 0 24 25" 
-      fill="none" 
+    <svg
+      width="24"
+      height="25"
+      viewBox="0 0 24 25"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path 
-        fill-rule="evenodd" 
-        clip-rule="evenodd" 
-        d="M12 17.6826C14.7614 17.6826 17 15.444 17 12.6826C17 9.92119 14.7614 7.68262 12 7.68262C9.23858 7.68262 7 9.92119 7 12.6826C7 15.444 9.23858 17.6826 12 17.6826Z" 
-        stroke="white" 
-        stroke-width="2" 
-        stroke-linecap="round" 
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M12 17.6826C14.7614 17.6826 17 15.444 17 12.6826C17 9.92119 14.7614 7.68262 12 7.68262C9.23858 7.68262 7 9.92119 7 12.6826C7 15.444 9.23858 17.6826 12 17.6826Z"
+        stroke="inherit"
+        stroke-width="2"
+        stroke-linecap="round"
         stroke-linejoin="round"
       />
-      <path 
-        d="M12 1.68262V3.68262" 
-        stroke="white" 
-        stroke-width="2" 
-        stroke-linecap="round" 
+      <path
+        d="M12 1.68262V3.68262"
+        stroke="inherit"
+        stroke-width="2"
+        stroke-linecap="round"
         stroke-linejoin="round"
       />
-      <path 
-        d="M12 21.6826V23.6826" 
-        stroke="white" 
-        stroke-width="2" 
-        stroke-linecap="round" 
+      <path
+        d="M12 21.6826V23.6826"
+        stroke="inherit"
+        stroke-width="2"
+        stroke-linecap="round"
         stroke-linejoin="round"
       />
-      <path 
+      <path
         d="M4.21997 4.90283L5.63997 6.32283"
-        stroke="white" 
-        stroke-width="2" 
-        stroke-linecap="round" 
+        stroke="inherit"
+        stroke-width="2"
+        stroke-linecap="round"
         stroke-linejoin="round"
       />
-      <path 
-        d="M18.3601 19.0425L19.7801 20.4625" 
-        stroke="white" 
-        stroke-width="2" 
-        stroke-linecap="round" 
+      <path
+        d="M18.3601 19.0425L19.7801 20.4625"
+        stroke="inherit"
+        stroke-width="2"
+        stroke-linecap="round"
         stroke-linejoin="round"
       />
-      <path 
-        d="M1 12.6826H3" 
-        stroke="white" 
-        stroke-width="2" 
-        stroke-linecap="round" 
+      <path
+        d="M1 12.6826H3"
+        stroke="inherit"
+        stroke-width="2"
+        stroke-linecap="round"
         stroke-linejoin="round"
       />
-      <path 
-        d="M21 12.6826H23" 
-        stroke="white" 
-        stroke-width="2" 
-        stroke-linecap="round" 
+      <path
+        d="M21 12.6826H23"
+        stroke="inherit"
+        stroke-width="2"
+        stroke-linecap="round"
         stroke-linejoin="round"
       />
-      <path 
-        d="M4.21997 20.4625L5.63997 19.0425" 
-        stroke="white" 
-        stroke-width="2" 
-        stroke-linecap="round" 
+      <path
+        d="M4.21997 20.4625L5.63997 19.0425"
+        stroke="inherit"
+        stroke-width="2"
+        stroke-linecap="round"
         stroke-linejoin="round"
       />
-      <path 
-        d="M18.3601 6.32283L19.7801 4.90283" 
-        stroke="white" 
-        stroke-width="2" 
-        stroke-linecap="round" 
+      <path
+        d="M18.3601 6.32283L19.7801 4.90283"
+        stroke="inherit"
+        stroke-width="2"
+        stroke-linecap="round"
         stroke-linejoin="round"
       />
-      </svg>
+    </svg>
   ),
   poly: (
     <svg

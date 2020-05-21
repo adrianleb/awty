@@ -6,7 +6,7 @@ const PageLabel = ({ position, children, offset = '50' }) => {
       sx={{
         position: 'absolute',
         top: offset,
-        [position]: [-54, 0],
+        [position]: [-50, 0],
         transform: 'rotate(-90deg)',
       }}
     >

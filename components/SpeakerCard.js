@@ -14,7 +14,7 @@ import {
   Button,
   IconButton,
 } from 'theme-ui';
-const SpeakerCard = ({ title, name, photo, time, jobTitle }) => {
+const SpeakerCard = ({ title, speakers, time }) => {
   return (
     <Box
       sx={{
@@ -30,37 +30,39 @@ const SpeakerCard = ({ title, name, photo, time, jobTitle }) => {
         <span
           sx={{
             variant: 'styles.sub3bg',
-            // bg: 'primary',
-            // boxShadow: () => `0.4em 0 0 #000, -0.4em 0 0 #000`,
           }}
         >
           {title}
         </span>
       </Heading>
       <Grid columns={'auto auto'}>
-        <Grid
-          columns={'repeat(2, auto)'}
-          sx={{
-            alignItems: 'center',
-            justifyContent: 'flex-start',
-          }}
-        >
-          <Image
-            sx={{
-              width: 'photos',
-              height: 'photos',
-              borderRadius: 'round',
-            }}
-            src={photo}
-          />
-          <Grid
-            sx={{
-              rowGap: 0,
-            }}
-          >
-            <Text variant="boldedP">{name}</Text>
-            <Text>{jobTitle}</Text>
-          </Grid>
+        <Grid gap={3}>
+          {speakers.map(({ photo, name, jobTitle }) => (
+            <Grid
+              columns={'repeat(2, auto)'}
+              sx={{
+                alignItems: 'center',
+                justifyContent: 'flex-start',
+              }}
+            >
+              <Image
+                sx={{
+                  width: 'photos',
+                  height: 'photos',
+                  borderRadius: 'round',
+                }}
+                src={photo}
+              />
+              <Grid
+                sx={{
+                  rowGap: 0,
+                }}
+              >
+                <Text variant="boldedP">{name}</Text>
+                <Text>{jobTitle}</Text>
+              </Grid>
+            </Grid>
+          ))}
         </Grid>
         <Grid
           sx={{
@@ -68,6 +70,7 @@ const SpeakerCard = ({ title, name, photo, time, jobTitle }) => {
             borderColor: 'accent',
             px: 3,
             rowGap: 0,
+            alignContent: 'center',
           }}
         >
           <Text>{time.tz('America/Los_Angeles').format('ha z')}</Text>
