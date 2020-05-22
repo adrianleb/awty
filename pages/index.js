@@ -11,6 +11,7 @@ import {
   Heading,
   Input,
   Grid,
+  useColorMode,
   Button,
   IconButton,
 } from 'theme-ui';
@@ -29,6 +30,8 @@ import dynamic from 'next/dynamic';
 const Bg = dynamic(() => import('../components/Bg'), { ssr: false });
 
 export default () => {
+  const [colorMode] = useColorMode();
+
   const shapes = [
     // ['/headless.glb', 'Cube', [1, 1, 1]],
     ['/Box.glb', 'mesh_0', [0.8, 0.8, 0.8]],
@@ -165,7 +168,12 @@ export default () => {
                 px: [5, 0],
               }}
             >
-              <Image src="/rainbow.gif" />
+              <Image
+                src="/rainbow.gif"
+                sx={{
+                  filter: () => (colorMode === 'dark' ? 'invert(1)' : null),
+                }}
+              />
               <Grid
                 sx={{
                   pt: 4,
