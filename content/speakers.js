@@ -225,7 +225,7 @@ const speakers = [
     speakers: [
       {
         name: 'James Waugh',
-        jobTitle: 'Technologist, Creator of RareAF',
+        jobTitle: 'Technologist, RareAF',
         photo: '/speakersbw/james.png',
       },
     ],
