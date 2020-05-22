@@ -123,7 +123,9 @@ export default () => {
                 Ticket
               </Button>
               <Button
+                as="a"
                 variant="text"
+                href="#program"
                 onClick={() => {
                   setY(300);
                   console.log('scroled?');
@@ -200,6 +202,7 @@ export default () => {
 
         <Box
           ref={programRef}
+          id="program"
           sx={{
             position: 'relative',
             overflow: 'hidden',
