@@ -163,7 +163,7 @@ const speakers = [
     ],
   },
   {
-    title: 'Live DJ Performance',
+    title: 'Beats',
     time: '2020-06-01T20:00',
     speakers: [
       {

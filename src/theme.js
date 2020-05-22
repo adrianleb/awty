@@ -155,9 +155,12 @@ const theme = {
       fontSize: [4,5],
     },
     boldedP: {
-      fontSize: 2,
+      fontSize: [1, 2],
       fontFamily: 'body',
       fontWeight: 'bold',
+    },
+    speakermobile: {
+      flexDirection: ['column', 'row'],
     },
     pageLabel: {
       variant: 'text.sub4',

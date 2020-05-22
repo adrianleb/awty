@@ -37,7 +37,9 @@ const SpeakerCard = ({ title, speakers, time }) => {
           {title}
         </span>
       </Heading>
-      <Grid columns={'auto auto'}>
+      <Grid 
+        columns={'auto auto'}
+      >
         <Grid gap={3}>
           {speakers.map(({ photo, name, jobTitle }) => (
             <Grid
@@ -45,6 +47,7 @@ const SpeakerCard = ({ title, speakers, time }) => {
               sx={{
                 alignItems: 'center',
                 justifyContent: 'flex-start',
+                variant: 'speakermobile',
               }}
             >
               <Image
