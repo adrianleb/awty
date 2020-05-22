@@ -24,7 +24,7 @@ const Drawer = () => {
           pt: 4,
         }}
       >
-        <NavLink href="#!" p={2}>
+        <NavLink href="/" p={2}>
           Home
         </NavLink>
         <NavLink
@@ -33,12 +33,6 @@ const Drawer = () => {
           p={2}
         >
           Ticket
-        </NavLink>
-        <NavLink href="#!" p={2}>
-          Blog
-        </NavLink>
-        <NavLink href="#!" p={2}>
-          About
         </NavLink>
       </Box>
     </Box>

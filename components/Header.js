@@ -42,9 +42,27 @@ const Header = ({ onNavOpen }) => {
           justifyContent: 'flex-end',
         }}
       >
-        <IconButton>{tw}</IconButton>
-        <IconButton>{insta}</IconButton>
-        <IconButton>{fb}</IconButton>
+        <IconButton
+          as="a"
+          target="_blank"
+          href="https://twitter.com/arewethereyetx"
+        >
+          {tw}
+        </IconButton>
+        <IconButton
+          as="a"
+          target="_blank"
+          href="https://www.instagram.com/arewethereyetx/"
+        >
+          {insta}
+        </IconButton>
+        <IconButton
+          as="a"
+          target="_blank"
+          href="https://www.facebook.com/arewethereyetx"
+        >
+          {fb}
+        </IconButton>
         <IconButton
           onClick={() => setColorMode(colorMode === 'light' ? 'dark' : 'light')}
         >
