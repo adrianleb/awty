@@ -9,12 +9,14 @@ import {
   Box,
   Image,
   Heading,
+  useColorMode,
   Input,
   Grid,
   Button,
   IconButton,
 } from 'theme-ui';
 const SpeakerCard = ({ title, speakers, time }) => {
+  const [colorMode] = useColorMode();
   return (
     <Box
       sx={{
@@ -50,6 +52,10 @@ const SpeakerCard = ({ title, speakers, time }) => {
                   width: 'photos',
                   height: 'photos',
                   borderRadius: 'round',
+                  // filter: (theme) => {
+                  // console.log(theme);
+                  // return colorMode === 'dark' ? 'invert(1)' : null;
+                  // },
                 }}
                 src={photo}
               />

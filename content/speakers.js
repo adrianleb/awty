@@ -3,24 +3,21 @@ const speakers = [
     title: 'Everything in place, nothing in order',
     time: '2020-05-31T16:30',
     speakers: [
-      
       {
         name: 'Davide Bernadis',
         jobTitle: 'Creative Director',
-        photo:
-          'speaker1/davide.png',
+        photo: '/speakersbw/davide.png',
       },
     ],
   },
   {
-    title: 'Digital Theme Park Platforms: What\'s the future of clothing?',
+    title: "Digital Theme Park Platforms: What's the future of clothing?",
     time: '2020-05-31T17:00',
     speakers: [
       {
         name: 'Benny Giang',
         jobTitle: 'Technologist, Dapper Lab',
-        photo:
-          'speaker1/benny.png',
+        photo: '/speakersbw/benny.png',
       },
     ],
   },
@@ -31,8 +28,7 @@ const speakers = [
       {
         name: 'Esté Macleod',
         jobTitle: 'Artist & Educator',
-        photo:
-          'speaker1/este.png',
+        photo: '/speakersbw/este.png',
       },
     ],
   },
@@ -43,8 +39,7 @@ const speakers = [
       {
         name: 'Klasien van de Zandschulp',
         jobTitle: 'Artist',
-        photo:
-          'speaker1/klasien.png',
+        photo: '/speakersbw/klasien.png',
       },
     ],
   },
@@ -55,44 +50,43 @@ const speakers = [
       {
         name: 'Inma Moreno',
         jobTitle: 'Artist',
-        photo:
-          'speaker1/inma.png',
+        photo: '/speakersbw/inma.png',
       },
     ],
   },
   {
-    title: 'How you can influence the fashion industry in becoming more sustainable?',
+    title:
+      'How you can influence the fashion industry in becoming more sustainable?',
     time: '2020-05-31T19:00',
     speakers: [
       {
         name: 'Leonor Von Salisch',
         jobTitle: 'Fashion Activist, Creator of XO Berlin',
-        photo:
-          'speaker1/leonor.png',
+        photo: '/speakersbw/leonor.png',
       },
     ],
   },
   {
-    title: 'The New Normal - Are We All Right or Orwell? An Installation to commemorate the voluntarily surrender    ',
+    title:
+      'The New Normal - Are We All Right or Orwell? An Installation to commemorate the voluntarily surrender    ',
     time: '2020-05-31T19:30',
     speakers: [
       {
         name: 'Martin Lukas Ostachowski',
         jobTitle: 'Artist',
-        photo:
-          'speaker1/martin.png',
+        photo: '/speakersbw/martin.png',
       },
     ],
   },
   {
-    title: 'Let\'s get existential! Anthropocene Heritage before and after COVID19 multi-transitional crisis.',
+    title:
+      "Let's get existential! Anthropocene Heritage before and after COVID19 multi-transitional crisis.",
     time: '2020-06-01T16:30',
     speakers: [
       {
         name: 'Tainá Guedes',
         jobTitle: 'Artist, Creator of Food Art Week',
-        photo:
-          'speaker1/taina.png',
+        photo: '/speakersbw/taina.png',
       },
     ],
   },
@@ -103,20 +97,19 @@ const speakers = [
       {
         name: 'Puntita Meeboonsabai',
         jobTitle: 'Artist, Painter',
-        photo:
-          'speaker1/puntita.png',
+        photo: '/speakersbw/puntita.png',
       },
     ],
   },
   {
-    title: 'How does music support you? The Importance & Value of Songs of Substance',
+    title:
+      'How does music support you? The Importance & Value of Songs of Substance',
     time: '2020-06-01T17:30',
     speakers: [
       {
         name: 'Jasmin Morgner',
         jobTitle: 'Musician',
-        photo:
-          'speaker1/jasmin.png',
+        photo: '/speakersbw/jasmin.png',
       },
     ],
   },
@@ -127,8 +120,7 @@ const speakers = [
       {
         name: 'Evan Minto',
         jobTitle: 'User-Experience Designer',
-        photo:
-          'speaker1/evan.png',
+        photo: '/speakersbw/evan.png',
       },
     ],
   },
@@ -151,26 +143,22 @@ const speakers = [
       {
         name: 'Ilan Katin',
         jobTitle: 'Artist',
-        photo:
-          'speaker1/ilan.png',
+        photo: '/speakersbw/ilan.png',
       },
       {
         name: 'Conlan Rios',
         jobTitle: 'Technologist, Creator of Async.art',
-        photo:
-          'speaker1/conlan.png',
+        photo: '/speakersbw/conlan.png',
       },
       {
         name: 'VaX',
         jobTitle: 'Crypto Artist',
-        photo:
-          'speaker1/vax.png',
+        photo: '/speakersbw/vax.png',
       },
       {
         name: 'Sparrow',
         jobTitle: 'Artist',
-        photo:
-          'speaker1/sparrow.png',
+        photo: '/speakersbw/sparrow.png',
       },
     ],
   },
@@ -181,20 +169,19 @@ const speakers = [
       {
         name: 'Kabuki',
         jobTitle: 'Musician',
-        photo:
-          'speaker1/kabuki.png',
+        photo: '/speakersbw/kabuki.png',
       },
     ],
   },
   {
-    title: 'Ghosting your own project? 4 strategies to deal with your own downsides',
+    title:
+      'Ghosting your own project? 4 strategies to deal with your own downsides',
     time: '2020-06-02T16:00',
     speakers: [
       {
         name: 'Greta Ferreira',
         jobTitle: 'Creator, House of Girls Collective',
-        photo:
-          'speaker1/greta.png',
+        photo: '/speakersbw/greta.png',
       },
     ],
   },
@@ -205,8 +192,7 @@ const speakers = [
       {
         name: 'Tanisara Borwonnauwarux',
         jobTitle: 'Fashion Designer',
-        photo:
-          'speaker1/tanisara.png',
+        photo: '/speakersbw/tanisara.png',
       },
     ],
   },
@@ -217,8 +203,7 @@ const speakers = [
       {
         name: 'Graham Meyer',
         jobTitle: 'Photographer',
-        photo:
-          'speaker1/graham.png',
+        photo: '/speakersbw/graham.png',
       },
     ],
   },
@@ -241,8 +226,7 @@ const speakers = [
       {
         name: 'James Waugh',
         jobTitle: 'Technologist, Creator of RareAF',
-        photo:
-          'speaker1/james.png',
+        photo: '/speakersbw/james.png',
       },
     ],
   },
@@ -253,8 +237,7 @@ const speakers = [
       {
         name: 'Leo Rain',
         jobTitle: 'Art Educator',
-        photo:
-          'speaker1/leorain.png',
+        photo: '/speakersbw/leorain.png',
       },
     ],
   },
@@ -265,23 +248,19 @@ const speakers = [
       {
         name: 'RAC - André Allen Anjos',
         jobTitle: 'Artist',
-        photo:
-          'speaker1/racAndreAllenAnjos.png',
+        photo: '/speakersbw/racAndreAllenAnjos.png',
       },
       {
         name: 'Jack Spallone',
         jobTitle: 'Technologist',
-        photo:
-          'speaker1/jackspallone.png',
+        photo: '/speakersbw/jackspallone.png',
       },
       {
         name: 'Simona Pop',
         jobTitle: 'Technologist, OST',
-        photo:
-          'speaker1/simona.png',
+        photo: '/speakersbw/simona.png',
       },
     ],
   },
-  
 ];
 export default speakers;
