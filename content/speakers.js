@@ -3,6 +3,7 @@ const speakers = [
     title: 'Proactive scalable local area network',
     time: '2020-05-31T11:00',
     speakers: [
+      
       {
         name: 'Dexter Nairns',
         jobTitle: 'Payment Adjustment Coordinator',
