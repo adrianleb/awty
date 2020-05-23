@@ -131,8 +131,7 @@ const speakers = [
       {
         name: 'Duncan',
         jobTitle: 'Reality Technician',
-        photo:
-          'https://robohash.org/inciduntaliquidtempore.bmp?size=200x200&set=set1',
+        photo: '/speakersbw/duncan.png',
       },
     ],
   },
