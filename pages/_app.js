@@ -6,16 +6,10 @@ import theme from '../src/theme';
 import { ThemeProvider } from 'theme-ui';
 import Moment from 'react-moment';
 import 'moment-timezone';
-import TagManager from 'react-gtm-module';
+import Router from 'next/router';
+import withGA from 'next-ga';
 
-export default class App extends NextApp {
-  componentDidMount() {
-    const tagManagerArgs = {
-      gtmId: 'UA-165358220-1',
-    };
-
-    TagManager.initialize(tagManagerArgs);
-  }
+const MyApp = class App extends NextApp {
   render() {
     const { Component, pageProps } = this.props;
     return (
@@ -89,4 +83,6 @@ export default class App extends NextApp {
       </ThemeProvider>
     );
   }
-}
+};
+
+export default withGA('UA-165358220-1', Router)(MyApp);
