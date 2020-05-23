@@ -19,6 +19,7 @@ const SpeakerCard = ({ title, speakers, time }) => {
   const [colorMode] = useColorMode();
   return (
     <Box
+      key={`${title}_${time}`}
       sx={{
         p: 4,
       }}
