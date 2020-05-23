@@ -5,7 +5,7 @@ const speakers = [
     speakers: [
       {
         name: 'Davide Bernadis',
-        jobTitle: 'Creative Director',
+        jobTitle: 'Former CD @ VICE, MTV Europe',
         photo: '/speakersbw/davide.png',
       },
     ],
