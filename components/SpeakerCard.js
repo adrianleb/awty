@@ -22,6 +22,7 @@ const SpeakerCard = ({ title, speakers, time }) => {
       key={`${title}_${time}`}
       sx={{
         p: 4,
+        py: [3, 4],
       }}
     >
       <Heading
@@ -111,7 +112,7 @@ const SpeakerCard = ({ title, speakers, time }) => {
             // borderColor: 'red',
 
             px: [null, 3],
-            py: [3, null],
+            pt: [2, null],
             rowGap: 0,
             alignContent: 'center',
           }}
