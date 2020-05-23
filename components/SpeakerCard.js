@@ -48,18 +48,43 @@ const SpeakerCard = ({ title, speakers, time }) => {
                 // variant: 'speakermobile',
               }}
             >
-              <Image
+              <Box
                 sx={{
                   width: 'photos',
                   height: 'photos',
                   borderRadius: 'round',
-                  // filter: (theme) => {
-                  // console.log(theme);
-                  // return colorMode === 'dark' ? 'invert(1)' : null;
-                  // },
+                  overflow: 'hidden',
+                  position: 'relative',
                 }}
-                src={photo}
-              />
+              >
+                <Image
+                  sx={{
+                    width: 'photos',
+                    height: 'photos',
+                    borderRadius: 'round',
+                    '&::before': {
+                      content: '""', // ::before and ::after both require content
+                    },
+                    // filter: (theme) => {
+                    // console.log(theme);
+                    // return colorMode === 'dark' ? 'invert(1)' : null;
+                    // },
+                  }}
+                  src={photo}
+                />
+                <Box
+                  sx={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    backgroundImage: (theme) =>
+                      `linear-gradient(120deg, ${theme.colors.background2}, ${theme.colors.accent})`,
+                    opacity: '.5',
+                  }}
+                ></Box>
+              </Box>
               <Grid
                 sx={{
                   rowGap: 0,
