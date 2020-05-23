@@ -251,7 +251,7 @@ const speakers = [
       },
       {
         name: 'Jack Spallone',
-        jobTitle: 'Technologist',
+        jobTitle: 'Technologist, Viacolor',
         photo: '/speakersbw/jackspallone.png',
       },
       {
