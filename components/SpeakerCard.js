@@ -45,7 +45,7 @@ const SpeakerCard = ({ title, speakers, time }) => {
               sx={{
                 alignItems: 'center',
                 justifyContent: 'flex-start',
-                variant: 'speakermobile',
+                // variant: 'speakermobile',
               }}
             >
               <Image
@@ -72,12 +72,17 @@ const SpeakerCard = ({ title, speakers, time }) => {
           ))}
         </Grid>
         <Grid
-          columns={['auto auto auto', null]}
+          columns={['auto auto auto', 'auto']}
           sx={{
             borderLeft: [null, '2px solid'],
-            borderTop: ['2px solid', null],
+            borderLeftColor: [null, 'accent'],
 
-            borderColor: 'accent',
+            // borderLeft: ['0px solid', '2px solid'],
+            borderTop: ['2px solid', '0px solid'],
+            borderTopColor: 'accent',
+
+            // borderColor: 'red',
+
             px: [null, 3],
             py: [3, null],
             rowGap: 0,
