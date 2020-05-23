@@ -152,7 +152,7 @@ const theme = {
     },
     sub5: {
       variant: 'text.sub2',
-      fontSize: [4,5],
+      fontSize: [4, 5],
     },
     boldedP: {
       fontSize: [1, 2],
@@ -211,7 +211,7 @@ const theme = {
 
       backgroundImage: (theme) =>
         `linear-gradient(110deg, transparent 50%, ${theme.colors.primary} 53%), linear-gradient(110deg, ${theme.colors.primary} 50%, transparent 53%), linear-gradient(to left, ${theme.colors.primary}, ${theme.colors.primary})`,
-      backgroundSize: '16px 100%, 16px 100%, calc(100% - 32px) 100%',
+      backgroundSize: '17px 100%, 17px 100%, calc(100% - 32px) 100%',
       backgroundPosition: 'left, right, center',
       backgroundRepeat: 'no-repeat',
       display: 'inline',
