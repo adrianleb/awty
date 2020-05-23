@@ -53,7 +53,13 @@ const SpeakersLayout = ({}) => {
             >
               {k}
             </Heading>
-            <Grid columns={[1, 2]}>
+            <Grid
+              columns={[1, 1, 2]}
+              sx={{
+                justifyContent: 'center',
+                px: [0, 5, 0],
+              }}
+            >
               {sorted[k].map(({ title, time, speakers }) => {
                 return <SpeakerCard {...{ title, speakers, time }} />;
               })}

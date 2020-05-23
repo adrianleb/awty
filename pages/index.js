@@ -50,14 +50,11 @@ export default () => {
     // config: config.slow,
     y: 0,
     onChange: (props) => {
-      console.log('prosp', props);
       window.scroll(0, props.y);
     },
   }));
 
-  console.log(y, 'lala');
   const scrollToRef = (ref) => {
-    console.log('scrol?');
     setY({ y: 300 });
   };
   return (
@@ -131,7 +128,6 @@ export default () => {
                 href="#program"
                 onClick={() => {
                   setY(300);
-                  console.log('scroled?');
                 }}
               >
                 Program
