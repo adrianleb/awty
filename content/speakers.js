@@ -4,7 +4,7 @@ const speakers = [
     time: '2020-05-31T16:30',
     speakers: [
       {
-        name: 'Davide Bernadis',
+        name: 'Davide Bernardis',
         jobTitle: 'Former CD @ VICE, MTV Europe',
         photo: '/speakersbw/davide.png',
       },
