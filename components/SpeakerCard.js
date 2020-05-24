@@ -61,6 +61,7 @@ const SpeakerCard = ({ title, speakers, time }) => {
                 }}
               >
                 <Image
+                  key={`photo_${name}`}
                   sx={{
                     width: 'photos',
                     height: 'photos',
