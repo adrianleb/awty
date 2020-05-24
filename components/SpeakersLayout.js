@@ -38,6 +38,7 @@ const SpeakersLayout = ({}) => {
       {Object.keys(sorted).map((k) => {
         return (
           <Box
+            key={`section_${k}`}
             sx={{
               py: 5,
               px: [4, 0],
@@ -61,7 +62,12 @@ const SpeakersLayout = ({}) => {
               }}
             >
               {sorted[k].map(({ title, time, speakers }) => {
-                return <SpeakerCard {...{ title, speakers, time }} />;
+                return (
+                  <SpeakerCard
+                    key={`${title}_${time}_card`}
+                    {...{ title, speakers, time }}
+                  />
+                );
               })}
             </Grid>
           </Box>

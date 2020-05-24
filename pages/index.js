@@ -35,7 +35,7 @@ export default () => {
   const shapes = [
     // ['/headless.glb', 'Cube', [1, 1, 1]],
     ['/Box.glb', 'mesh_0', [0.8, 0.8, 0.8]],
-    // ['/Avocado.glb', 'Avocado', [1, 1, 1]],
+    //  ['/Avocado.glb', 'Avocado', [1, 1, 1]],
     // ['/Duck.glb', 'LOD3spShape'],
   ];
 

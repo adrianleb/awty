@@ -1,7 +1,7 @@
 const speakers = [
   {
     title: 'Everything in place, nothing in order',
-    time: '2020-05-31T16:30',
+    time: '2020-05-31T16:30Z',
     speakers: [
       {
         name: 'Davide Bernardis',
@@ -12,7 +12,7 @@ const speakers = [
   },
   {
     title: "Digital Theme Park Platforms: What's the future of clothing?",
-    time: '2020-05-31T17:00',
+    time: '2020-05-31T17:00Z',
     speakers: [
       {
         name: 'Benny Giang',
@@ -23,7 +23,7 @@ const speakers = [
   },
   {
     title: '123 Draw! A different approach to creativity',
-    time: '2020-05-31T17:30',
+    time: '2020-05-31T17:30Z',
     speakers: [
       {
         name: 'Esté Macleod',
@@ -34,7 +34,7 @@ const speakers = [
   },
   {
     title: 'ARE-WE-DANCING-YET?',
-    time: '2020-05-31T18:00',
+    time: '2020-05-31T18:00Z',
     speakers: [
       {
         name: 'Klasien van de Zandschulp',
@@ -45,7 +45,7 @@ const speakers = [
   },
   {
     title: 'Spread Art: test your creativity and transmit it',
-    time: '2020-05-31T18:30',
+    time: '2020-05-31T18:30Z',
     speakers: [
       {
         name: 'Inma Moreno',
@@ -57,7 +57,7 @@ const speakers = [
   {
     title:
       'How you can influence the fashion industry in becoming more sustainable?',
-    time: '2020-05-31T19:00',
+    time: '2020-05-31T19:00Z',
     speakers: [
       {
         name: 'Leonor Von Salisch',
@@ -69,7 +69,7 @@ const speakers = [
   {
     title:
       'The New Normal - Are We All Right or Orwell? An Installation to commemorate the voluntarily surrender    ',
-    time: '2020-05-31T19:30',
+    time: '2020-05-31T19:30Z',
     speakers: [
       {
         name: 'Martin Lukas Ostachowski',
@@ -81,7 +81,7 @@ const speakers = [
   {
     title:
       "Let's get existential! Anthropocene Heritage before and after COVID19 multi-transitional crisis.",
-    time: '2020-06-01T16:30',
+    time: '2020-06-01T16:30Z',
     speakers: [
       {
         name: 'Tainá Guedes',
@@ -92,7 +92,7 @@ const speakers = [
   },
   {
     title: 'Feminism in Surrealist Paintings',
-    time: '2020-06-01T17:00',
+    time: '2020-06-01T17:00Z',
     speakers: [
       {
         name: 'Puntita Meeboonsabai',
@@ -104,7 +104,7 @@ const speakers = [
   {
     title:
       'How does music support you? The Importance & Value of Songs of Substance',
-    time: '2020-06-01T17:30',
+    time: '2020-06-01T17:30Z',
     speakers: [
       {
         name: 'Jasmin Morgner',
@@ -115,7 +115,7 @@ const speakers = [
   },
   {
     title: 'Inclusive Design for Situational Limitations',
-    time: '2020-06-01T18:00',
+    time: '2020-06-01T18:00Z',
     speakers: [
       {
         name: 'Evan Minto',
@@ -126,7 +126,7 @@ const speakers = [
   },
   {
     title: 'Welcome to the Precipice',
-    time: '2020-06-01T18:30',
+    time: '2020-06-01T18:30Z',
     speakers: [
       {
         name: 'Duncan',
@@ -137,7 +137,7 @@ const speakers = [
   },
   {
     title: 'What does a Decentralized Art World Feel Like?',
-    time: '2020-06-01T19:00',
+    time: '2020-06-01T19:00Z',
     speakers: [
       {
         name: 'Ilan Katin',
@@ -163,7 +163,7 @@ const speakers = [
   },
   {
     title: 'Beats',
-    time: '2020-06-01T20:00',
+    time: '2020-06-01T20:00Z',
     speakers: [
       {
         name: 'Kabuki',
@@ -175,7 +175,7 @@ const speakers = [
   {
     title:
       'Ghosting your own project? 4 strategies to deal with your own downsides',
-    time: '2020-06-02T16:00',
+    time: '2020-06-02T16:00Z',
     speakers: [
       {
         name: 'Greta Ferreira',
@@ -186,7 +186,7 @@ const speakers = [
   },
   {
     title: 'Fashion sustainability through hyper-personalization',
-    time: '2020-06-02T16:30',
+    time: '2020-06-02T16:30Z',
     speakers: [
       {
         name: 'Tanisara Borwonnauwarux',
@@ -197,7 +197,7 @@ const speakers = [
   },
   {
     title: 'The sound of existentialism is a shutter click',
-    time: '2020-06-02T17:00',
+    time: '2020-06-02T17:00Z',
     speakers: [
       {
         name: 'Graham Meyer',
@@ -208,7 +208,7 @@ const speakers = [
   },
   {
     title: 'Creative sustainability',
-    time: '2020-06-02T17:30',
+    time: '2020-06-02T17:30Z',
     speakers: [
       {
         name: 'Eilidh McLaughlin',
@@ -220,7 +220,7 @@ const speakers = [
   },
   {
     title: 'Virtually Rare Experiences',
-    time: '2020-06-02T18:00',
+    time: '2020-06-02T18:00Z',
     speakers: [
       {
         name: 'James Waugh',
@@ -231,7 +231,7 @@ const speakers = [
   },
   {
     title: 'How learning life drawing can transform creative work?',
-    time: '2020-06-02T18:30',
+    time: '2020-06-02T18:30Z',
     speakers: [
       {
         name: 'Leo Rain',
@@ -242,7 +242,7 @@ const speakers = [
   },
   {
     title: 'Finale: Evolution of Music',
-    time: '2020-06-02T19:00',
+    time: '2020-06-02T19:00Z',
     speakers: [
       {
         name: 'RAC - André Allen Anjos',

@@ -19,8 +19,10 @@ const SpeakerCard = ({ title, speakers, time }) => {
   const [colorMode] = useColorMode();
   return (
     <Box
+      key={`${title}_${time}`}
       sx={{
         p: 4,
+        py: [3, 4],
       }}
     >
       <Heading
@@ -41,6 +43,7 @@ const SpeakerCard = ({ title, speakers, time }) => {
         <Grid gap={3}>
           {speakers.map(({ photo, name, jobTitle }) => (
             <Grid
+              key={`${name}_speker`}
               columns={'repeat(2, auto)'}
               sx={{
                 alignItems: 'center',
@@ -109,14 +112,16 @@ const SpeakerCard = ({ title, speakers, time }) => {
             // borderColor: 'red',
 
             px: [null, 3],
-            py: [3, null],
+            pt: [2, null],
             rowGap: 0,
             alignContent: 'center',
           }}
         >
-          <Text>{time.tz('America/Los_Angeles').format('ha z')}</Text>
-          <Text>{time.tz('Europe/Amsterdam').format('ha z')}</Text>
-          <Text>{time.tz('Asia/Tokyo').format('ha z')}</Text>
+          <Text>
+            {time.clone().tz('America/Los_Angeles').format('h:mm a z')}
+          </Text>
+          <Text>{time.clone().tz('Europe/Amsterdam').format('h:mm a z')}</Text>
+          <Text>{time.clone().tz('Asia/Tokyo').format('h:mm a z')}</Text>
         </Grid>
       </Grid>
     </Box>
