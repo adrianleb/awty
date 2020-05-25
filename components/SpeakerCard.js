@@ -58,6 +58,9 @@ const SpeakerCard = ({ title, speakers, time }) => {
                   borderRadius: 'round',
                   overflow: 'hidden',
                   position: 'relative',
+                  backfaceVisibility: 'none',
+                  perspective: '1000',
+                  transform: 'translateZ(0)',
                 }}
               >
                 <Image
@@ -65,14 +68,9 @@ const SpeakerCard = ({ title, speakers, time }) => {
                   sx={{
                     width: 'photos',
                     height: 'photos',
-                    borderRadius: 'round',
-                    '&::before': {
-                      content: '""', // ::before and ::after both require content
-                    },
-                    // filter: (theme) => {
-                    // console.log(theme);
-                    // return colorMode === 'dark' ? 'invert(1)' : null;
-                    // },
+                    backfaceVisibility: 'none',
+                    perspective: '1000',
+                    transform: 'translateZ(0)',
                   }}
                   src={photo}
                 />
@@ -83,6 +81,9 @@ const SpeakerCard = ({ title, speakers, time }) => {
                     left: 0,
                     width: '100%',
                     height: '100%',
+                    backfaceVisibility: 'none',
+                    perspective: '1000',
+                    transform: 'translateZ(0)',
                     backgroundImage: (theme) =>
                       `linear-gradient(120deg, ${theme.colors.background2}, ${theme.colors.accent})`,
                     opacity: '.5',
