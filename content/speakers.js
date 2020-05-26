@@ -33,17 +33,6 @@ const speakers = [
     ],
   },
   {
-    title: 'ARE-WE-DANCING-YET?',
-    time: '2020-05-31T18:00+02:00',
-    speakers: [
-      {
-        name: 'Klasien van de Zandschulp',
-        jobTitle: 'Artist',
-        photo: '/speakersbw/klasien.png',
-      },
-    ],
-  },
-  {
     title: 'Spread Art: test your creativity and transmit it',
     time: '2020-05-31T18:30+02:00',
     speakers: [
