@@ -196,14 +196,13 @@ const speakers = [
     ],
   },
   {
-    title: 'Creative sustainability',
+    title: 'Creative sustainability: Empowering creatives to challenge climate breakdown',
     time: '2020-06-02T17:30+02:00',
     speakers: [
       {
         name: 'Eilidh McLaughlin',
         jobTitle: 'Sustainability Consultant',
-        photo:
-          'https://robohash.org/inciduntaliquidtempore.bmp?size=200x200&set=set1',
+        photo:'/speakersbw/eilidh.png',
       },
     ],
   },
