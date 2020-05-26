@@ -159,9 +159,6 @@ const theme = {
       fontFamily: 'body',
       fontWeight: 'bold',
     },
-    speakermobile: {
-      flexDirection: ['column', 'row'],
-    },
     pageLabel: {
       variant: 'text.sub4',
       fontSize: 0,

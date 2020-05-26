@@ -33,17 +33,6 @@ const speakers = [
     ],
   },
   {
-    title: 'ARE-WE-DANCING-YET?',
-    time: '2020-05-31T18:00+02:00',
-    speakers: [
-      {
-        name: 'Klasien van de Zandschulp',
-        jobTitle: 'Artist',
-        photo: '/speakersbw/klasien.png',
-      },
-    ],
-  },
-  {
     title: 'Spread Art: test your creativity and transmit it',
     time: '2020-05-31T18:30+02:00',
     speakers: [
@@ -207,14 +196,13 @@ const speakers = [
     ],
   },
   {
-    title: 'Creative sustainability',
+    title: 'Creative sustainability: Empowering creatives to challenge climate breakdown',
     time: '2020-06-02T17:30+02:00',
     speakers: [
       {
         name: 'Eilidh McLaughlin',
         jobTitle: 'Sustainability Consultant',
-        photo:
-          'https://robohash.org/inciduntaliquidtempore.bmp?size=200x200&set=set1',
+        photo:'/speakersbw/eilidh.png',
       },
     ],
   },
