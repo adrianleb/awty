@@ -4,7 +4,7 @@ const theme = {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   sizes: {
     container: 900,
-    photos: 46,
+    photos: 0, //remove photos
   },
   fonts: {
     body: '"Source Sans Pro", sans-serif',

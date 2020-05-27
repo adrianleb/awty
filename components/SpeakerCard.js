@@ -48,7 +48,6 @@ const SpeakerCard = ({ title, speakers, time }) => {
               sx={{
                 alignItems: 'center',
                 justifyContent: 'flex-start',
-                // variant: 'speakermobile',
               }}
             >
               <Box
