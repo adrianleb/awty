@@ -33,7 +33,7 @@ const MyApp = class App extends NextApp {
             content="Are We There Yet is a micro-creative festival showcasing lightning talks on the future of creativity"
           />
           <meta
-            name="twitter:image:src"
+            name="twitter:image"
             content="/twitter/tt-card-summary.png"
           />
 
