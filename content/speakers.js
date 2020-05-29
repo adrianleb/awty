@@ -151,17 +151,6 @@ const speakers = [
     ],
   },
   {
-    title: 'Beats',
-    time: '2020-06-01T20:00+02:00',
-    speakers: [
-      {
-        name: 'Kabuki',
-        jobTitle: 'Musician',
-        photo: '/speakersbw/kabuki.png',
-      },
-    ],
-  },
-  {
     title:
       'Ghosting your own project? 4 strategies to deal with your own downsides',
     time: '2020-06-02T16:00+02:00',
@@ -218,7 +207,7 @@ const speakers = [
     ],
   },
   {
-    title: 'How learning life drawing can transform creative work?',
+    title: 'How can learning life drawing can transform creative work?',
     time: '2020-06-02T18:30+02:00',
     speakers: [
       {
