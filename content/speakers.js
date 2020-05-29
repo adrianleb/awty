@@ -5,7 +5,7 @@ const speakers = [
     speakers: [
       {
         name: 'Davide Bernardis',
-        jobTitle: 'Former CD @ VICE, MTV Europe',
+        jobTitle: 'Director, Former CD @ VICE, MTV Europe',
         photo: '/speakersbw/davide.png',
       },
     ],
@@ -34,7 +34,7 @@ const speakers = [
   },
   {
     title: 'Spread Art: test your creativity and transmit it',
-    time: '2020-05-31T18:30+02:00',
+    time: '2020-05-31T18:00+02:00',
     speakers: [
       {
         name: 'Inma Moreno',
@@ -46,7 +46,7 @@ const speakers = [
   {
     title:
       'How you can influence the fashion industry in becoming more sustainable?',
-    time: '2020-05-31T19:00+02:00',
+    time: '2020-05-31T18:30+02:00',
     speakers: [
       {
         name: 'Leonor Von Salisch',
@@ -58,7 +58,7 @@ const speakers = [
   {
     title:
       'The New Normal - Are We All Right or Orwell? An Installation to commemorate the voluntarily surrender    ',
-    time: '2020-05-31T19:30+02:00',
+    time: '2020-05-31T19:00+02:00',
     speakers: [
       {
         name: 'Martin Lukas Ostachowski',
