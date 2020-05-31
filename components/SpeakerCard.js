@@ -8,6 +8,7 @@ import {
   Flex,
   Box,
   Image,
+  Badge,
   Heading,
   useColorMode,
   Input,
@@ -15,11 +16,18 @@ import {
   Button,
   IconButton,
 } from 'theme-ui';
-const SpeakerCard = ({ title, speakers, time }) => {
+const SpeakerCard = ({
+  title,
+  speakers,
+  time,
+  timeOriginal,
+  isNow,
+  isPast,
+}) => {
   const [colorMode] = useColorMode();
   return (
     <Box
-      key={`${title}_${time}`}
+      key={`${title}_${timeOriginal}`}
       sx={{
         p: 4,
         py: [3, 4],
@@ -51,7 +59,9 @@ const SpeakerCard = ({ title, speakers, time }) => {
                 // variant: 'speakermobile',
               }}
             >
-              <Box
+              {' '}
+              <Box />
+              {/* <Box
                 sx={{
                   width: 'photos',
                   height: 'photos',
@@ -89,7 +99,7 @@ const SpeakerCard = ({ title, speakers, time }) => {
                     opacity: '.5',
                   }}
                 ></Box>
-              </Box>
+              </Box> */}
               <Grid
                 sx={{
                   rowGap: 0,
@@ -104,12 +114,12 @@ const SpeakerCard = ({ title, speakers, time }) => {
         <Grid
           columns={['auto auto auto', 'auto']}
           sx={{
-            borderLeft: [null, '2px solid'],
-            borderLeftColor: [null, 'accent'],
+            borderLeft: isPast ? null : [null, '2px solid'],
+            borderLeftColor: isPast ? null : [null, 'accent'],
 
             // borderLeft: ['0px solid', '2px solid'],
-            borderTop: ['2px solid', '0px solid'],
-            borderTopColor: 'accent',
+            borderTop: isPast ? null : ['2px solid', '0px solid'],
+            borderTopColor: isPast ? null : 'accent',
 
             // borderColor: 'red',
 
@@ -119,11 +129,23 @@ const SpeakerCard = ({ title, speakers, time }) => {
             alignContent: 'center',
           }}
         >
-          <Text>
-            {time.clone().tz('America/Los_Angeles').format('h:mm a z')}
-          </Text>
-          <Text>{time.clone().tz('Europe/Amsterdam').format('h:mm a z')}</Text>
-          <Text>{time.clone().tz('Asia/Tokyo').format('h:mm a z')}</Text>
+          {isNow ? (
+            <Button as="a" href="#live" variant="miniAccent">
+              Watch Live
+            </Button>
+          ) : isPast ? (
+            <Box></Box>
+          ) : (
+            <>
+              <Text>
+                {time.clone().tz('America/Los_Angeles').format('h:mm a z')}
+              </Text>
+              <Text>
+                {time.clone().tz('Europe/Amsterdam').format('h:mm a z')}
+              </Text>
+              <Text>{time.clone().tz('Asia/Tokyo').format('h:mm a z')}</Text>
+            </>
+          )}
         </Grid>
       </Grid>
     </Box>

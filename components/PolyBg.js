@@ -7,7 +7,7 @@ const PolyBg = () => {
       sx={{
         position: 'absolute',
         zIndex: -1,
-        top: 0,
+        top: '10%',
         bottom: 0,
         left: '-300px',
         pt: 1,

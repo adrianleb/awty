@@ -4,7 +4,8 @@ const theme = {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   sizes: {
     container: 900,
-    photos: 0 //remove photos for now
+    dot: 8,
+    photos: 0, //remove photos for now
   },
   fonts: {
     body: '"Source Sans Pro", sans-serif',
@@ -161,7 +162,7 @@ const theme = {
     },
     pageLabel: {
       variant: 'text.sub4',
-      fontSize: 0,
+      fontSize: [0, 1],
     },
   },
   links: {
@@ -193,6 +194,13 @@ const theme = {
       bg: 'transparent',
       textDecoration: 'underline',
       color: 'text',
+    },
+    miniAccent: {
+      variant: 'buttons.primary',
+      fontSize: [1, 1],
+      bg: 'accent',
+      py: 1,
+      px: 2,
     },
   },
   layout: {

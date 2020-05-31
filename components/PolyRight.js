@@ -10,7 +10,7 @@ const PolyRight = ({ offset }) => {
         zIndex: -1,
         top: offset,
         bottom: 0,
-        right: '-900px',
+        right: '-300px',
       }}
     >
       <IconButton
