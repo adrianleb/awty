@@ -106,7 +106,7 @@ export default () => {
               Micro festival showcasing lightning talks on the future of
               creativity
             </Heading>
-            <Heading variant="sub4">May 31, June 1-2, 2020</Heading>
+            <Heading variant="sub4">May 31, June 1, June 14, 2020</Heading>
 
             <Grid
               gap={[1, 2]}

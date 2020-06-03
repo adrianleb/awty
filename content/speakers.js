@@ -153,7 +153,7 @@ const speakers = [
   {
     title:
       'Ghosting your own project? 4 strategies to deal with your own downsides',
-    time: '2020-06-02T16:00+02:00',
+    time: '2020-06-14T16:00+02:00',
     speakers: [
       {
         name: 'Greta Ferreira',
@@ -164,7 +164,7 @@ const speakers = [
   },
   {
     title: 'Fashion sustainability through hyper-personalization',
-    time: '2020-06-02T16:30+02:00',
+    time: '2020-06-14T16:30+02:00',
     speakers: [
       {
         name: 'Tanisara Borwonnauwarux',
@@ -175,7 +175,7 @@ const speakers = [
   },
   {
     title: 'The sound of existentialism is a shutter click',
-    time: '2020-06-02T17:00+02:00',
+    time: '2020-06-14T17:00+02:00',
     speakers: [
       {
         name: 'Graham Meyer',
@@ -185,19 +185,20 @@ const speakers = [
     ],
   },
   {
-    title: 'Creative sustainability: Empowering creatives to challenge climate breakdown',
-    time: '2020-06-02T17:30+02:00',
+    title:
+      'Creative sustainability: Empowering creatives to challenge climate breakdown',
+    time: '2020-06-14T17:30+02:00',
     speakers: [
       {
         name: 'Eilidh McLaughlin',
         jobTitle: 'Sustainability Consultant',
-        photo:'/speakersbw/eilidh.png',
+        photo: '/speakersbw/eilidh.png',
       },
     ],
   },
   {
     title: 'Virtually Rare Experiences',
-    time: '2020-06-02T18:00+02:00',
+    time: '2020-06-14T18:00+02:00',
     speakers: [
       {
         name: 'James Waugh',
@@ -208,7 +209,7 @@ const speakers = [
   },
   {
     title: 'How can learning life drawing can transform creative work?',
-    time: '2020-06-02T18:30+02:00',
+    time: '2020-06-14T18:30+02:00',
     speakers: [
       {
         name: 'Leo Rain',
@@ -219,7 +220,7 @@ const speakers = [
   },
   {
     title: 'Finale: Evolution of Music',
-    time: '2020-06-02T19:00+02:00',
+    time: '2020-06-14T19:00+02:00',
     speakers: [
       {
         name: 'RAC - André Allen Anjos',
