@@ -218,26 +218,5 @@ const speakers = [
       },
     ],
   },
-  {
-    title: 'Finale: Evolution of Music',
-    time: '2020-06-14T19:00+02:00',
-    speakers: [
-      {
-        name: 'RAC - André Allen Anjos',
-        jobTitle: 'Artist',
-        photo: '/speakersbw/racAndreAllenAnjos.png',
-      },
-      {
-        name: 'Jack Spallone',
-        jobTitle: 'Technologist, Viacolor',
-        photo: '/speakersbw/jackspallone.png',
-      },
-      {
-        name: 'Simona Pop',
-        jobTitle: 'Technologist, OST',
-        photo: '/speakersbw/simona.png',
-      },
-    ],
-  },
 ];
 export default speakers;

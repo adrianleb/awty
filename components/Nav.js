@@ -28,7 +28,7 @@ const Drawer = () => {
           Home
         </NavLink>
         <NavLink
-          href="https://www.eventbrite.com/e/are-we-there-yet-creative-festival-tickets-105513112560"
+          href="https://www.eventbrite.com/e/are-we-there-yet-micro-creative-festival-day-3-tickets-109535371244"
           target="_blank"
           p={2}
         >

@@ -118,7 +118,7 @@ export default () => {
             >
               <Button
                 as="a"
-                href="https://www.eventbrite.com/e/are-we-there-yet-creative-festival-tickets-105513112560"
+                href="https://www.eventbrite.com/e/are-we-there-yet-micro-creative-festival-day-3-tickets-109535371244"
               >
                 Ticket
               </Button>
