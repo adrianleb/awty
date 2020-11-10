@@ -27,13 +27,16 @@ const Drawer = () => {
         <NavLink href="/" p={2}>
           Home
         </NavLink>
-        <NavLink
+        <NavLink href="/sessions" p={2}>
+          Sessions
+        </NavLink>
+        {/* <NavLink
           href="https://www.eventbrite.com/e/are-we-there-yet-micro-creative-festival-day-3-tickets-109535371244"
           target="_blank"
           p={2}
         >
           Ticket
-        </NavLink>
+        </NavLink> */}
       </Box>
     </Box>
   );
