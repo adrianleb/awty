@@ -17,6 +17,7 @@ import {
 } from 'theme-ui';
 import PageLabel from '../components/PageLabel';
 import { useSpring, config } from 'react-spring';
+import NLink from 'next/link';
 
 import AnimatedLayout from '../components/AnimatedLayout';
 import Footer from '../components/Footer';
@@ -116,128 +117,20 @@ export default () => {
                 justifyContent: 'center',
               }}
             >
-              <Button
-                as="a"
-                href="https://www.eventbrite.com/e/are-we-there-yet-micro-creative-festival-day-3-tickets-109535371244"
-              >
-                Ticket
-              </Button>
-              <Button
-                as="a"
-                variant="text"
-                href="#program"
-                onClick={() => {
-                  setY(300);
-                }}
-              >
-                Program
-              </Button>
+              <NLink passHref href={`/sessions`}>
+                <Button
+                  as="a"
+                  variant="text"
+                  // href="#program"
+                >
+                  Watch Past Sessions
+                </Button>
+              </NLink>
             </Grid>
           </Container>
-          <Poly />
+          {/* <Poly /> */}
         </Box>
-        <Flex
-          sx={{
-            width: '100%',
-            justifyContent: 'center',
-            bg: 'background2',
-            alignItems: 'center',
-            position: 'relative',
-            py: 5,
-          }}
-        >
-          <PageLabel position={'left'} offset={'30%'}>
-            Who are we?
-          </PageLabel>
 
-          <PageLabel position={'right'} offset={'60%'}>
-            Why are we here?
-          </PageLabel>
-          <Container ref={aboutRef}>
-            <Grid
-              gap={4}
-              rowGap={4}
-              columns={[1, 'repeat(2, auto)']}
-              sx={{
-                my: 5,
-                justifyContent: 'center',
-                px: [5, 0],
-              }}
-            >
-              <Image
-                src="/rainbow.gif"
-                sx={{
-                  filter: () => (colorMode === 'dark' ? 'invert(1)' : null),
-                }}
-              />
-              <Grid
-                sx={{
-                  pt: 4,
-                }}
-              >
-                <Heading variant="sub5" pb={3}>
-                  ARE WE THERE YET?
-                </Heading>
-                <Text as="p">
-                  <Heading variant="sub2" sx={{ display: 'inline' }}>
-                    It
-                  </Heading>{' '}
-                  may seem like a fairly easy question. Yet some of the simplest
-                  questions in life can lead us to think deeply about ourselves,
-                  our work, and the world around us. Are-we-there-yet is a space
-                  where designers, artists, and thinkers alike can converge to
-                  discuss where do we go next based on projects, ideas,
-                  aesthetic and philosophies that inspires us today.
-                </Text>
-                <Text>
-                  In the face of recent trials, creativity is manifesting itself
-                  in novel forms, as acts of self-expression, reflection and
-                  collaboration. Are-we-there-yet is here to propel a
-                  multifaceted perspective shift in the creative world. It is a
-                  place to discover budding ideas that may sound unattainable,
-                  surprising, or even dangerous. New paths are being paved, and
-                  you are the pavers.
-                </Text>
-              </Grid>
-            </Grid>
-          </Container>
-          <Poly />
-        </Flex>
-
-        <Box
-          ref={programRef}
-          id="program"
-          sx={{
-            position: 'relative',
-            overflow: 'hidden',
-          }}
-        >
-          <PageLabel position={'left'} offset={'10%'}>
-            Speakers
-          </PageLabel>
-
-          <PageLabel position={'left'} offset={'70%'}>
-            Speakers
-          </PageLabel>
-
-          <PageLabel position={'right'} offset={'40%'}>
-            Speakers
-          </PageLabel>
-          {/* 
-          <PageLabel position={'right'} offset={'80%'}>
-            Speakers
-          </PageLabel> */}
-
-          <Container
-            sx={{
-              py: 5,
-            }}
-          >
-            <PolyBg />
-            <PolyRight offset={'50%'} />
-            <SpeakersLayout />
-          </Container>
-        </Box>
         <Footer />
       </Box>
     </AnimatedLayout>
