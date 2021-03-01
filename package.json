@@ -30,6 +30,6 @@
     "react-use-gesture": "^7.0.15",
     "react-with-gesture": "^4.0.8",
     "theme-ui": "^0.4.0-alpha.1",
-    "three": "^0.116.1"
+    "three": "^0.125.0"
   }
 }
