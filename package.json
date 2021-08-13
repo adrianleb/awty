@@ -19,7 +19,7 @@
     "lodash.clamp": "^4.0.3",
     "moment": "^2.25.3",
     "moment-timezone": "^0.5.29",
-    "next": "^9.3.4",
+    "next": "^11.1.0",
     "next-ga": "^2.3.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
