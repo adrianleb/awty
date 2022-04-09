@@ -17,7 +17,7 @@
     "@theme-ui/color": "^0.3.1",
     "drei": "^0.0.32",
     "lodash.clamp": "^4.0.3",
-    "moment": "^2.25.3",
+    "moment": "^2.29.2",
     "moment-timezone": "^0.5.29",
     "next": "^9.3.4",
     "next-ga": "^2.3.4",
