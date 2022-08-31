@@ -18,7 +18,7 @@
     "drei": "^0.0.32",
     "lodash.clamp": "^4.0.3",
     "moment": "^2.25.3",
-    "moment-timezone": "^0.5.29",
+    "moment-timezone": "^0.5.35",
     "next": "^9.3.4",
     "next-ga": "^2.3.4",
     "react": "^16.13.1",
